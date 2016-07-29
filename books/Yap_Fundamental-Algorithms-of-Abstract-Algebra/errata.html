@@ -1,0 +1,400 @@
+<html>
+<title> Chee Yap: book errata list</title>
+<body bgcolor=fafafa>
+<b>
+
+<center>
+<h1>
+ERRATA LIST for BOOK:
+<br>
+Fundamental Problems in Algorithmic Algebra
+</h1>
+</center>
+
+<pre>
+
+	THIS LIST IS POSTED at <a
+	  href=http://cs.nyu.edu/yap/book/>/http://cs.nyu.edu/yap/book/</a>
+
+	YOU MAY REPORT ANY ERRORS (IN THE BOOK OR IN THIS LIST) BY CONTACTING
+	THE AUTHOR AT
+		"yap (at) cs.nyu.edu".
+	I pay a reward of (Y-1900) cents to the first finder of each mistake of
+	any kind in the book or in this list, including multiple occurrences,
+	but excluding errors in indexing.  Here Y is the year of communication.
+	For example, in 2013, each error is worth $2.13.
+
+	NOTE: Some special characters do not display properly on web browsers.
+	Please download this file to see the actual characters.  LaTeX is
+	used in some description.
+
+	THANKS to the following individuals for bug report: 
+	Christoph Koegl, Duncan Buell, Bernard Chazelle, 
+	Richard Fateman, Chen Li, Steve Fortune, Damien Stehle, Vikram Sharma,
+	Zilin Du, Sung-il Pae, Abram Connelly, Edvard Fagerholm, David Teusner,
+	Jason Yellick.
+
+===============================================================================
+page	line            BUG REPORT [RESPONSE]             	name	date
+===============================================================================
+
+---- FRONTISPIECE MATERIAL ----------------------------------------------------
+vii	chap.2 & 2.4	Denominator => Divisor			Buell	6/1/00
+xiii	para.2, l.4	\'a  => \`a				Chazelle 1/21/00
+	-5		leit motif => leitmotif			Fateman	 2/17/00
+	-3		elemination => elimination		Chazelle 1/21/00
+	-2		Contiuned => Continued			Chazelle 1/21/00
+xv	7		Algebrea => Algebra			Koegl	1/18/00
+	10		Birkäuser => Birkhäuser			Koegl	1/18/00
+	16		Spring-Verlag => Springer-Verlag	Koegl	1/18/00
+	-7		Algebriac => Algebraic			Koegl	1/18/00
+	-7		Coputing => Computing			Koegl	1/19/00
+	-2		Compoutation => Computation		Koegl	1/18/00
+
+	-0		Various people have pointed out additional
+			books that ought to belong to my list. 
+
+			MORE TEXTBOOKS:
+
+	  		E. Bach, J. Shallit:
+				Algorithmic Number Theory - 
+				Volume 1, Efficient Algorithms,
+	  			MIT Press, Cambridge, Mass., 1996.
+	  
+	  		M. Bronstein:
+				Symbolic Integration I - Transcendental Functions,
+				Springer-Verlag, Berlin, 1997.
+	  
+	  		P. Bürgisser, M. Clausen, M. A. Shokrollahi:
+				Algebraic Complexity Theory,
+	  			Springer-Verlag, Berlin, 1997.
+	  
+	  		J. von zur Gathen, J. Gerhard:
+				Modern Computer Algebra,
+				Cambridge University Press, 1999.
+	  
+	  		M. Pohst, H. Zassenhaus:
+				Algorithmic Algebraic Number Theory,
+				Cambridge University Press, 1997.
+
+			M. Mignotte, D. Stefanescu: 
+				Polynomials - An Algorithmic Approach
+				Springer-Verlag, Singapore, 1999.
+	  
+	  		W. V. Vasconcelos:
+				Computational Methods in Commutative Algebra
+				and Algebraic Geometry,
+				Springer-Verlag, Berlin, 1998.
+	  
+	  		F. Winkler:
+				Polynomial Algorithms in Computer Algebra,
+				Springer-Verlag, Wien, 1996.
+	  
+			
+---- CHAP 0: INTRODUCTION -----------------------------------------------------
+1	2nd citation	D'Alembart => d'Alembert		Koegl	1/19/00
+2	4, 6		lead(P):  "lead" should have \tt font	Buell	6/1/00
+7	2 of (0.9)	Add a '.' at the end.			Koegl	1/19/00
+8	26 		addresses => address 			Pae	12/12/05
+9	15f.		How should the '+ 1' account for a
+			"separator between the two integers"? 
+			I do not see how a single bit could
+			help to distinguish between the numerator
+			and the denominator. 
+								Koegl	1/19/00
+			[FIX: I NEED log(p) additional bits,
+			   not constant]	
+
+	19f.		Same discussion applies here. For a more
+			detailed account of space requirements one
+			would have to discuss implementation
+			issues more deeply.
+								Koegl	1/19/00
+			[FIX: AGAIN, I NEED
+			   "+log(size(a_{ij}))" bits]
+
+	-9		I feel that you have an unfair
+			characterization that sparse representation
+			increase the computational complexity
+			of problems.				Fateman	2/18/00
+
+			[FIX:  Technically, I am correct, but the
+			negative connotation is unwarranted!
+			Please insert the following sentences:
+			"This does not mean that the sparse 
+			representation is undesirable.  Indeed, in
+			practice, it is often the only feasible
+			representation.  Basically these complexity
+			results say that the sparse representation
+			can be super-polynomially more compact than the
+			dense representation (assuming $NP\neq P$)." ]
+
+	9, 15, 19	wrong font for closing quotes		Buell	6/1/00
+			
+15	-8		\Omega(0(g(n))+f(n)) => \Omega(O(g(n))+f(n))
+								Koegl	1/19/00
+19	-5		Khacian => Khachian			Koegl	1/19/00
+
+---- CHAP 1: ARITHMETIC -------------------------------------------------------	
+27	2 of Pascal	those who has => those who have		Koegl	1/19/00
+	-4 of Leibniz	be repeated => by repeated		Koegl	1/19/00
+32	-l		scalar => componentwise			Yap	10/17/00
+
+---- CHAP 2: GCD --------------------------------------------------------------
+43	2		DENOMINATOR => DIVISOR			Buell	6/1/00
+	-6		denominator => divisor			Buell	6/1/00
+45	9		arithmetic  => Arithmetic		Buell	6/1/00
+48	3 lines after
+	eqn.(2.3)	produces  => produce			Buell	6/1/00
+52	Example 2.1	(13,8,3,-1) => (13,8,-3,-1)		Teusner	1/26/11
+54	4		DENOMINATOR => DIVISOR			Buell	6/1/00
+54	-11		partial quotient => partial quotient.	Pae	12/12/05
+63	figure 2.1	length of D should be l-1, not l	Stehle	7/9/01
+65	-6		+1 => -1				Stehle	7/9/01
+65	-5		floor(m'/2)+1 => ceiling(m'/2)-1	Stehle	7/9/01
+65	-4		floor(m'/2)+1 => ceiling(m'/2)-1	Stehle	7/9/01
+69	Section 2.A.2	The cutoff should be 8, not 4		Stehle	7/9/01
+			This means: "a<=3 should be "a<=7"
+			and "a>=4" should be "a>=8".
+			Changes in 3 places.
+73-75	Section 2.A.4	Because of the changes in Section	Stehle	7/9/01
+			2.A.2, we need to rewrite this section. 
+			We will post this in the future (please
+			contact the author if this is important).
+
+===============================================================================
+
+
+---- CHAP 3: SUBRESULTANTS ----------------------------------------------------
+77	8		alternations => alterations		Buell	6/1/00
+78	-9		hold unless => holds unless		Pae	12/12/05
+79	footnote	[60] => [63]				Buell	6/1/00
+80	-10		prim(Q), prim(R) belong => 
+				prim(Q) and prim(R) belongs	Pae	12/12/05
+82	statement of
+	lemma 3.4	"\beta = lead(B). Then"  =>
+			"\beta = lead(B), then we have that"	Buell	6/1/00
+83	-12		multiple GCD => multiple GCDs		Buell	6/1/00
+85	1		Sylvester => the Sylvester 		Buell	6/1/00
+87	3		that those => than those 		Pae	12/12/05
+	15		\alpha^{2^k} => \alpha^{2^{k-2}} 	Pae	12/12/05
+88	12		\det M_o => \det M_0 	 		Pae	12/12/05
+89	Eqn (3.13)	The correct order of computing the
+			quintuple is
+			(P_{i+1},\delta_i,\beta_{i+1},a_{i+1},\psi_{i+1})
+								Sharma+Du 6/1/05
+96	10		assertion b) => assertion (b) 		Pae	12/12/05
+
+---- CHAP 4: MODULAR TECHNIQUES -----------------------------------------------
+105	9		[105, [p.271] => [105, p.271]		Pae	12/12/05
+106	12		a_i^{(j)}\in I_i => 
+			  a_i^{(j)}\in I_i and a_j^{(i)}\in I_j	Pae	12/12/05
+107	2		\cap_{i=1}^n I_n => \cap_{i=1}^n I_i	Pae	12/12/05
+116	l.3 of proof	the 2-norm of (X-c)A(X)	should be squared
+			on the left side of the equation	Yap	7/1/00
+	l.-2 of proof	2-norm should be squared 		Pae 	12/12/05
+117	l.-4 of proof	\prod_{i=k+1}^n => \prod_{i=k+1}^m	Li	7/5/00
+118	1		"bX^i" => "b_i X^i"			Zilin	5/16/05
+119	7		polynommials => polynomials 		Buell	6/1/00
+120	-9		Lemma 4.12 => (Lemma 4.12)		Pae	12/12/05
+123	2		S_n => S				Yap	3/19/04
+123	-10		comment about sparse representation
+			is confusing				Fateman	2/18/00
+			[FIX: as for page 9, line -9, we
+			should reword this sentence and clarify.]
+
+	-9		we must use now => we must now		Fateman	2/18/00
+	-2		several to => several ways to 		Fateman	2/18/00
+
+---- CHAP 5: FUNDAMENTAL THEOREM ----------------------------------------------
+124	-4 of Hilbert	construction => constructions		Koegl	1/19/00
+	-2 of Hilbert	may always may => may always		Koegl	1/19/00
+128	7 		?(E/F) => \Gamma(E/F)			Connelly 1/17/06
+133	-3		the set V => consider the set V		Buell	6/1/00
+
+---- CHAP 6: ROOTS ------------------------------------------------------------
+141	4 of Viete	thus => Thus				Koegl	1/19/00
+	4 of Viete	1/2  should be raised			Yap	2/22/00
+	-4 of Viete	trhe => the				Koegl	1/19/00
+144	9		roots A(X) => roots of A(X)		Pae	12/12/05
+147	7		A(1/X^n) => A(1/X)			Pae	12/12/05
+149	-1 from eqn (7)
+			|A'(\beta)|\ge |A'(\alpha)|/2
+			    => |A'(\beta)|\le |A'(\alpha)|/2	Yap	8/1/03
+154	1		is => are				Buell	6/1/00
+	-13		only divisible only => divisible only 	Pae	12/12/05
+	-9		has a integral => has an integral	Pae	12/12/05
+156	14		This show => This shows 		Pae	12/12/05
+162	-8		\cdots e_n => \cdots \le e_n		Yap	5/5/06
+163	7		\sum_{i=1}^{n_1} => \sum_{i=1}^{n}	Pae	12/12/05
+164	-9		of total degree d => of weight d	Pae	12/12/05
+167	8		"=" should be ":="			Fortune	11/30/00
+	11		aX^2 + bx => aX^2 + bX			Pae	12/12/05
+170	Thm.6.28	">" should be "\ge"			Kaltofen 3/23/05
+	Proof of Thm	In the equation just preceding the line
+			"where", the
+			vertical \vdots should be followed
+			by a newline before \beta_i^{(m-1)}	Vikram	9/12/05
+171	Proof of Thm	Similarly, the last equation of the
+			proof should replace ">" with "\ge"	Kaltofen 3/23/05
+179	14		A[(a+b)/2] => A((a+b)/2)		Pae	12/12/05
+	14		If A[(a+b)/2) => If A((a+b)/2)		Pae	12/12/05
+183	6 of Proof 	"\prod_{i=1}^m" => "\prod_{i=1}^{m-1}"	Vikram	3/27/03	
+	7 of Proof 	"\prod_{i=1}^m" => "\prod_{i=1}^{m-1}"	Vikram	3/27/03	
+	7 of Proof	"g(X^*)"  => "f'(X^*)"			Vikram	3/27/03
+	-3 of Proof	replace line by
+			  "\le (m-1)^{m-1}((m+1)^{1/2} \|f\|_\infty)^{2m-4}"
+			  					Yap	3/27/03
+
+---- CHAP 7: STURM THEORY -----------------------------------------------------
+187	-1		Note that ... of PRS. => Note that the
+			definition of a PRS implies that
+			$0 = \alpha_i A_{h-1}+Q_h A_h$ for some
+			$\alpha_h, Q_h$.			Yap	3/1/00
+192	12		A(X) and B(X) are both => B(X) is	Yap	9/27/01
+195	Exer.7.2.2	dominats => dominates			Fortune	11/30/00
+197	2		Omit "A(X) is square free and"		Yap	9/27/01
+197	9		Wrong bracket				Yap	9/27/01
+199	7		problem A => problem in Section 7.3.1	Yap	3/1/00
+	15		problem A => Section 7.3.1		Yap	3/1/00
+202	8		integer polynomial =>
+			   integer multivariate polynomial	Fortune	11/30/00
+212	lemma 7.14	roots of A =>
+			   roots of A in [\alpha,\beta]		Fortune 11/30/00
+215	-1		W^{\epsilon\cdot\epsilon} =>	
+			   W^{\epsilon\cdot\epsilon'} 		Fortune 11/30/00
+232	-3		see. for example => see, for example 	Pae	12/12/05
+
+---- CHAP 8: LATTICES ---------------------------------------------------------
+219	3 of Minkowski	(Leipzig,) => (Leipzig,			Koegl	1/19/00
+	-9		two-dimensions => two dimensions	Buell	6/1/00
+220	7		delete "or even infinite"		Buell	6/1/00
+222	line 3 of 8.1.1	Scalar => The scalar			Buell	6/1/00
+
+---- CHAP 9: LATTICE REDUCTION ------------------------------------------------
+234	5 of Weyl	gentlemen => gentleman			Koegl	1/19/00
+235	-8		LLL algoritmn => LLL algorithm		Fateman	2/17/00
+	-7		Sch\"onlage => Sch\"onhage		Fateman	2/17/00
+243	12		so => , and so				Yap	4/4/00
+245	-4		b^*j = c^*j => b^*_j = c^*_j 		Fagerholm 5/24/06
+245	-3		i=1 => i-1 				Fagerholm 5/24/06
+247	2		"entries of B then" => "entries of
+			   B then $\log d=O(mns)$ and"		Fagerholm 6/4/06
+	6, equation	"\log_{\sqrt{3}/2}" =>
+			"\log_{2/\sqrt{3}}" 			Fagerholm 7/6/06
+	6, equation	"s + log n" => "log d + s + log n"	Fagerholm 6/4/06
+	10, Theorem 9.9	"O[m^4n(s + log n)]" =>
+			"O[m^4n(log d + s + log n)]=O(m^5n^2s)"
+			  					Fagerholm 6/4/06
+	Exer.9.4.2	Bit estimates change accordingly	Fagerholm 6/4/06
+	Exer.9.4.3	Bit estimates change accordingly	Fagerholm 6/4/06
+250	line after 
+	theorem 9.13	involve => involves			Buell	6/1/00
+
+---- CHAP 10: LINEAR SYSTEMS --------------------------------------------------
+264	-7, after eqn(10.8):
+		 	(M)_{i,m} => (M)_{i,j}			Yap	6/1/10
+		 	(M)_{k,m} => (M)_{k,j}			Yap	6/1/10
+265	6, after item (iii):
+			"[For s=1, the" => "[For s=0, the"	Yap	6/1/10
+271	-3		r = 1,...,n  => r \in \{1,...,n\}	Buell	6/1/00
+277	6 after Cor.10.12.  c' := GCD... ==> c := GCD..."	Connelly 12/12/11
+	7 after Cor.10.12.  summation is from i=0, not i=1.	Connelly 12/12/11
+278	-6		relative  => relatively			Buell	6/1/00
+285	3		c_i \in |R => c_i \in {\mathbb R}	Pae	12/12/05
+	-13		((10.27)) => (10.27)			Pae	12/12/05
+286	3, 4		Bachem and Kannan => Kannan and Bachem	Buell	6/1/00
+292	11, 14, -5	Bachem and Kannan => Kannan and Bachem	Buell	6/1/00
+	
+
+---- CHAP 11 ELIMINATION ------------------------------------------------------
+300	1 of Noether	years , => years,			Koegl	1/19/00
+	-7 of Artin	littler => little			Buell	6/1/00
+	-6 of Artin	the => The				Koegl	1/19/00
+	-2 of Artin	husbanc's => husband's			Koegl	1/19/00
+351	before Lem11.46	[125] => [126]				Yap	4/18/08
+	Lemma 11.46	Wrong as stated. The (non-trivial)	Yellick	2/22/13
+			fix is in the this pdf file:
+			<a href=http://cs.nyu.edu/yap/book/Lemma11-46.pdf>Lemma11-46.pdf</a>.
+361	-3		equation not aligned			Yap 	5/12/04
+362	-9 (equation)	"d_n - \frac{q^n}{n} - o ..."  =>	Yap	5/12/04
+			"d_n - \frac{q^n}{n} = o ..."
+
+---- CHAP 12 GROEBNER BASES ---------------------------------------------------
+370	-4		a => an 				Buell	6/1/00
+371	Ex. 12.1.4	Dixon's => Dickson's [three times]	Koegl	1/19/00
+383	Ex. 12.4.3	on Sparc a => on a Sparc		Koegl	1/19/00
+			coefficients up => coefficients of up	Koegl	1/19/00
+	Ex. 12.4.4	Show the => Show that			Koegl	1/19/00
+			fm => f_m				Koegl	1/19/00
+			Ideal(f_1,...,fm1-Zp) =>
+				Ideal(f_1,...,f_m,1-Zp)		Koegl	1/19/00
+390	Ex. 12.6.7	\overbar{K}_n => \overbar{K}^n		Koegl	1/19/00
+			\overbar{K}[X_1,...,Xn]
+				=> \overbar{K}[X_1,...,X_n]	Koegl	1/19/00
+393	10		a => an 				Buell	6/1/00
+---- CHAP 13: BOUNDS ----------------------------------------------------------
+398	4 of Mac Lane	Neother => Noether			Koegl	1/19/00
+401	-2,-3		I => M					Yap	6/4/11
+442	-15		13.A:.1 => 13.A.1			Koegl	1/19/00
+445	6		13.A:.2 => 13.A.2			Koegl	1/19/00
+
+---- CHAP 14: CONTINUED FRACTIONS ---------------------------------------------
+446	line 1 in quote
+	of Minkowski 	investigation, => investigation		Buell	6/1/00
+450	line 2 of 14.2.1 "whee" => "where"			Connelly 1/17/06
+452	footnote	delete the word "also"			Buell	6/1/00
+462	line 15		matrix [0     1]  => [0  p_i]
+                               [p_i q_i]     [1  q_i]		Yap	9/26/02
+	eqn (14.24)	matrices [0     1]  => [0  p_j]
+                                 [p_j q_j]     [1  q_j]		
+			(for j=1, 2, i)				Yap	9/26/02
+463	eqn (14.29)	x_i => x_{i+1}				Sharma	12/24/02
+	-4		x_i => x_{i+1}				Sharma	12/24/02
+470	line -2		Replace "By binary search," with the	Yap	4/28/04
+			following text:
+			"If $\floor{s_0}\le r_0$ or
+			$A_0(\floor{s_0})A_0(s_0)\le 0$, then
+			$a_0 = \floor{s_0}$.  If $\ceil{r_0}\le 0_0$ or
+			$A_0(\ceil{r_0})A_0(r_0)\le 0$, then
+			$a_0 = \ceil{r_0}-1$. Otherwise, by a
+			binary search,"
+477	line after 
+	eqn(14.50)	\sqrt{5}-1 => \sqrt{5}+1		Sharma	6/30/06
+
+---- REFERENCES ---------------------------------------------------------------
+485	[7]		Bachem and Kannan => Kannan and Bachem	Buell	6/1/00
+486	[45]		Year of publication is 1973, not 1975	Pae 	12/12/05
+487	[55]		Dixon => Dickson			Yap	2/23/00
+
+---- INDEX --------------------------------------------------------------------
+498	line -18,
+	column 1	136 => 136, 173e			Yap	4/29/04	
+        (Eisenstein's crit.)
+
+---- SYMBOLS ------------------------------------------------------------------
+510	-9 (column 2)	\sigma should appear above arrow	Yap	5/18/00
+510	-10 (column 2)	\sigma should appear above arrow	Yap	5/18/00
+
+---- BACK COVER ---------------------------------------------------------------
+	-1		SIAM Journal of Computing
+			   => SIAM Journal on Computing 	Pae	12/12/05
+===============================================================================
+</pre>
+
+</b>
+<address>
+--Chee Yap
+<br>
+File Created: Sep 1999.
+<br>
+<script language="JavaScript">
+   <!-- hide from old browsers
+   document.write("Last Modified: ", document.lastModified)
+  // end hiding -->
+</script>
+</address>
+
+</body>
+</html>
+

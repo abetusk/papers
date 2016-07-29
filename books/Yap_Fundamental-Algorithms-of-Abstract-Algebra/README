@@ -1,0 +1,51 @@
+README FILE
+  IN DOWNLOAD DIRECTORY OF YAP's COMPUTER ALGEBRA BOOK
+======================================================
+
+1. This book has been published by Oxford University Press:
+
+	Chee K. Yap, "Fundamental Problems in Algorithmic Algebra",
+	Oxford University Press, 1999.
+	ISBN 0-19-512516-9.
+
+	WEBSITES:
+		Oxford University Press:  
+			http://www.oup-usa.org/
+		To Order Book:
+			http://www.oup-usa.org/isbn/0195125169.html
+		Author's Website for Book:
+			http://cs.nyu.edu/yap/book/
+		Errata page:
+			http://cs.nyu.edu/yap/book/errata.html
+
+2. The chapters (called "Lectures") begin with Lecture 0.
+
+	- Lecture <n> is stored compressed in file l<n>.dvi.gz 
+		(where n=0,1,2,...,14)
+	- The title page is in ll.dvi.gz and ll.ps.gz.
+	- 3/6/2000: I have now included the updated postscript files
+		(found under l<n>.ps.gz).
+
+3. You may use the contents here for evaluation of the book,
+	or if you are a student, or if you already own a hardcopy of
+	the published book (it is convenient to have an e-copy even when
+	one has a hardcopy).
+
+4. If you use this book for teaching purposes I would appreciate
+	your feedback.
+
+5. I would appreciate hearing from you for comments, errors and typos.
+	[NOTE: Since the book has been published, "minor" errors and typos
+	 in this download version should not be reported.] 
+
+6. This ftp directory has been available since 1990.
+	-- Most of the dvi files (with minor updates)
+		here are from approximately 1992.
+	-- Since 3/6/2000, I have also posted the postscript files
+		that are rather close to the published book
+		(at least before the copy editors started to transformed
+		my chapters).  The dvi files, however, are unchanged.
+	
+-- Chee Yap
+
+Last Update: 3/6/2004
