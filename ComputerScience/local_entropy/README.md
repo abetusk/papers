@@ -28,10 +28,25 @@ that differ from what the current NN predicts.
 I think this can essentially be taken as "energy", with 0 energy being
 optimal and higher energy being sub-optimal.
 
-* Local Free Entropy - $\phi(W,\gamma, \beta) = \lg(\sum _ {W'} e^{-\beta L _ {\text NE}  (W') - \frac{\gamma}{2}d(W, W')) } )$
-* Large Deviation Partition Function - $Z(y, \gamma, \beta', \beta) = \sum _ W e^{-\beta' L _ {\text NE}(W) + y \phi(W,\gamma, \beta)}$
-  - $y \in \mathbb{Z}^+$, (e.g. $y \in \{ 2,3,4,5 \})
-* $Z(y,\gamma,\beta',\beta) = \sum _ { W, \{W _ a\} } e ^ { -\beta' L _ { \text NE } ( W) - \beta \sum _ {a=0}^{y-1} L _ {\text NE} (W _ a) - \frac{\gamma}{2} \sum _ {a=0}^{y-1} d(W, W _ a) } $
+Local Free Entropy:
+
+$$
+\phi(W,\gamma, \beta) = \lg(\sum _ {W'} e^{-\beta L _ {\text NE}  (W') - \frac{\gamma}{2}d(W, W')) } )
+$$
+
+Large Deviation Partition Function:
+
+$$
+Z(y, \gamma, \beta', \beta) = \sum _ W e^{-\beta' L _ {\text NE}(W) + y \phi(W,\gamma, \beta)}
+$$
+
+Assume $y \in \mathbb{Z}^\+$, (e.g. $y \in \\{ 2,3,4,5 \\}$) and partition function becomes:
+
+$$
+Z(y,\gamma,\beta',\beta) = \sum _ { W, \\{ W _ a \\} } e ^ { -\beta' L _ { \text NE } ( W) - \beta { \sum }^ { y - 1 } _ { a = 0 } L _ {\text NE} (W _ a) - \frac{\gamma}{2} { \sum }^{y-1} _ {a=0} d(W, W _ a) }
+$$
+
+With each of the $y$ being replicas and the partition function now having components of the center, energy from the replicas and a distance penalization.
 
 References
 ---
