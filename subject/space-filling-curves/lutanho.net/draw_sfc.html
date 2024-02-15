@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>draw a space-filling curve of arbitrary size</title>
+</head>
+<body>
+<div align=center>
+<form>
+width:<input name="x" value="26" size=4><input type=button style="width:16" value="+" onClick="ChangeWidth(1)"><input type=button style="width:16" value="-" onClick="ChangeWidth(-1)">
+&nbsp;&nbsp;&nbsp;
+height:<input name="y" value="27" size=4><input type=button style="width:16" value="+" onClick="ChangeHeight(1)"><input type=button style="width:16" value="-" onClick="ChangeHeight(-1)"><br>
+<input type="button" value="draw space-filling curve" onClick="DrawSpaceFillingCurve()">
+</form>
+If you want to use this page offline, you must also download and unzip <a href="http://www.lutanho.net/diagram.zip">diagram.zip</a> and copy this file (draw_sfc.html)
+and the file <a href="spacefilling.html">spacefilling.html</a> into the diagram directory. The algorithm, which draws the spacefilling curve, in short
+is the following (for more details have a look at the source code of spacefilling.html). It was tested up to a size of 33x33 to work without
+bugs.
+<img src="spacefilling.gif">
+</div>
+<SCRIPT Language="JavaScript">
+var x_old, y_old, x_new, y_new;
+function ChangeWidth(nn)
+{ document.forms[0].x.value=parseInt(document.forms[0].x.value)+nn;
+  DrawSpaceFillingCurve();
+}
+function ChangeHeight(nn)
+{ document.forms[0].y.value=parseInt(document.forms[0].y.value)+nn;
+  DrawSpaceFillingCurve();
+}
+function DrawSpaceFillingCurve()
+{ var xx=parseInt(document.forms[0].x.value);
+  var yy=parseInt(document.forms[0].y.value);
+  if ((xx>0)&&(xx<100)&&(yy>0)&&(yy<100))
+    window.open("spacefilling.html?x="+xx+"&y="+yy,"sfw", "width="+eval(xx*8+10)+",height="+eval(yy*8+10)+",menubar=no,locationbar=no,resizable=yes,status=no,scrollbars=no");
+  else
+    alert ("You can only use numbers from the interval [1..99].")
+}
+</SCRIPT>
+<font size=-1>&copy; Lutz Tautenhahn, 2003</font>
+</body>
+</html>
