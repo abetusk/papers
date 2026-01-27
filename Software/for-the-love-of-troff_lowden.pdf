@@ -1,0 +1,2583 @@
+%PDF-1.3
+%âãÏÓ
+2 0 obj
+<<
+/Length 5492
+>>
+stream
+BT
+/TT2 1 Tf
+12 0 0 12 234.168 669 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(F)25(o)0(r)-250(the L)]TJ
+4.0297 0 TD
+-0.0067 Tc
+0.0167 Tw
+(ove of)Tj
+2.7569 0 TD
+0 Tc
+0 Tw
+[(T)74(r)18(off)]TJ
+/TT4 1 Tf
+10 0 0 10 252.76 633 Tm
+[(J)35(ames K. Lowden)]TJ
+/TT6 1 Tf
+-0.351 -1.8 TD
+(Symas Corporation)Tj
+/TT4 1 Tf
+1.5285 -3.6 TD
+[(ABSTRA)30(CT)]TJ
+/TT6 1 Tf
+-13.1535 -2.4 TD
+0.1786 Tw
+[(The state of Unix documentation has not adv)25(anced for decades.)-678.6(The v)15(enerable)]TJ
+-2.5 -1.2 TD
+0.1496 Tw
+[(man page remains the backbone and, as Hoare might ha)20(v)15(e)15( )-15(predicted, an impro)15(v)15(ement)]TJ
+T*
+0 Tw
+[(o)15(v)15(e)0(r)-250(man)15(y)-250(o)0(f)-250(its successors.)]TJ
+2.5 -1.56 TD
+0.0423 Tw
+(The plethora of competing formats and systems has created a fragmented and con-)Tj
+-2.5 -1.2 TD
+0.0509 Tw
+[(fusing body of documentation, confusing to users who don’)18(t)-300.9(kno)25(w)-300.9(where to look, and to)]TJ
+T*
+0.0312 Tw
+[(writers who don’)18(t)-281.2(kno)25(w)-281.2(where to start.)-531.2(One need only to search for HO)35(WT)18(O)-281.2(documents)]TJ
+T*
+0 Tw
+(on writing documentation for conformation.)Tj
+2.5 -1.56 TD
+0.0874 Tw
+[(This paper re)25(vie)25(ws the state of the art, and critiques the v)25(ariety of documentation)]TJ
+-2.5 -1.2 TD
+-0.0001 Tc
+0.0596 Tw
+[(systems in current use.)-559.7(It e)14.9(xplores why)-309.6(n)-0.1(e)24.9(w)24.9( )-25(systems were in)39.9(v)14.9(ented, which are currently)]TJ
+T*
+0 Tc
+0.0739 Tw
+[(f)10(ashionable, and suggests a path to a better)40(,)-323.9(uni)]TJ
+/TT7 1 Tf
+19.425 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0739 Tw
+(ed documentation system based wholly)Tj
+-19.9811 -1.2 TD
+0 Tw
+[(and solely on trof)25(f.)]TJ
+/TT2 1 Tf
+-3.6 -3.6 TD
+(The Stale State of the Art)Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+[(In the be)15(ginning w)10(as the man page.)-500(It di)25(vided darkness from light.)-500(And it w)10(as good.)]TJ
+T*
+0.1549 Tw
+[(But apparently not good enough.)-654.9(W)80(ould-be successors include T)70(e)15(xinfo, DocBook, Doxygen, and)]TJ
+-2.5 -1.2 TD
+0.386 Tw
+[(Markdo)25(wn. )-250(F)15(ormats, beside the terminal console, include PDF and HTML.)-886(Locations might be)]TJ
+T*
+0.1944 Tw
+[(/usr/share/man, or /usr/share/doc or /usr/share/info or /usr/share/html, or pretty much an)15(ywhere else in)]TJ
+T*
+0 Tw
+[(/usr/share, or only on the web)40(.)]TJ
+2.5 -1.56 TD
+0.066 Tw
+[(T)80(o)80( )-80(each its o)25(wn silo.)-566(There is no comprehensi)25(v)15(e)15( )-15(cross-reference, no accepted uni)25(v)15(ersal structure or)]TJ
+-2.5 -1.2 TD
+0.0191 Tw
+[(encoding or output format.)-519.2(There are dif)25(ferent schools of thought about ho)25(w)-269.1(t)0(o)-269.1(encourage better documen-)]TJ
+T*
+0 Tw
+(tation to be written, what the best output medium is, and what system should be used to render the output.)Tj
+2.5 -1.56 TD
+0.0482 Tw
+[(Rather than progress to)25(w)10(ard a single, all-encompassing system that utilizes the full capacity of lar)18(ge)]TJ
+-2.5 -1.2 TD
+0.1609 Tw
+[(memories, Unicode, and bit-mapped displays, documentation technology is re)15(gressing and fragmenting.)]TJ
+T*
+0.0368 Tw
+[(The b)20(uilt-in typesetting system, trof)25(f, is considered by man)15(y)-286.8(t)0(o)-286.8(b)0(e)-286.8(v)15(estigial and archaic.)-536.8(Y)100(e)0(t)-286.9(e)25(v)15(ery alterna-)]TJ
+T*
+0.0427 Tw
+[(ti)25(v)15(e)15( )-15.1(is)-292.8(less functional, or more complicated, or both.)-542.8(On most BSD systems trof)25(f)-292.8(has been replaced by the)]TJ
+T*
+0.1181 Tw
+[(less functional mandoc.)-618.1(GNU continues to promote T)70(e)15(xinfo. )-250(Perl)-368.1(had pod.)-618.2(Python has p)10(ydoc and pro-)]TJ
+T*
+0.0367 Tw
+[(motes Sphinx.)-536.7(Sub)15(v)15(ersion goes post-modern: web-only)65(.)-536.7(Man)15(y)-286.7(use Markdo)25(wn, a system with no standard,)]TJ
+T*
+0.1148 Tw
+[(ne)25(v)15(e)0(r)-364.9(mind support for footnotes.†)-614.8(X.or)18(g)-364.8(b)0(e)15(g)15( )354.8(an)-364.8(with a set of manuals in trof)25(f)-364.8(format. )-250(Instead)-364.8(updating)]TJ
+T*
+0 Tw
+(their content, the project opted to re-encode them in Docbook and/or Doxygen.)Tj
+2.5 -1.56 TD
+0.0573 Tw
+[(The dysfunctional Unix documentation system has hindered progress in other w)10(ays, too.)-557.3(F)15(o)0(r)-307.4(e)15(xam-)]TJ
+-2.5 -1.2 TD
+0.0881 Tw
+(ple, command-line shells cannot rely on documentation )Tj
+/TT7 1 Tf
+23.0552 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.088 Tw
+[(les to pro)15(vide interacti)25(v)15(e)15( )-15(help. )-250(The)-338(user cannot)]TJ
+-23.6113 -1.2 TD
+0 Tw
+(type)Tj
+2.5 -1.56 TD
+($)Tj
+/TT2 1 Tf
+0.75 0 TD
+(ssh)Tj
+ET
+0 G
+1 J 1 j 0.4 w 10 M []0 d
+1 i 
+120.39 137.67 21.12 -9.96 re
+S
+BT
+/TT6 1 Tf
+10 0 0 10 122.34 130.2 Tm
+(help)Tj
+-5.034 -1.56 TD
+0.0493 Tw
+[(to get a reminder of the a)20(v)25(ailable options, or — hea)20(v)15(e)0(n)-299.3(forfend — a)]TJ
+/TT4 1 Tf
+28.0726 0 TD
+0 Tw
+(form)Tj
+/TT6 1 Tf
+2.1885 0 TD
+0.0493 Tw
+[(to f)10(acilitate making the choices.)]TJ
+-30.2611 -1.2 TD
+0.0541 Tw
+[(The bare-bones e)15(xperience at the bash prompt is in part the product of the lack of a uni)]TJ
+/TT7 1 Tf
+35.6422 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0541 Tw
+(ed, programmati-)Tj
+-36.1984 -1.2 TD
+0 Tw
+(cally accessible body of documentation.)Tj
+ET
+0.32 w 
+72.03 82.59 m
+144.03 82.59 l
+S
+BT
+8 0 0 8 82 72.5999 Tm
+0.1004 Tw
+[(†)-250(F)15(ootnotes! Dude!)-600.4(Y)110(o)0(u)-350.4(can say other stuf)25(f)-350.4(that’)55(s)-350.4(pertinent b)20(ut not strictly necessary)65(,)-350.5(without interrupting)]TJ
+-1.25 -1.25 TD
+0 Tw
+[(the e)15(xplication.)]TJ
+10 0 0 10 249.545 24 Tm
+[(19 No)15(v)15(ember 2020)]TJ
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+11 0 obj
+<<
+/Length 8973
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 282.17 744 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(-2-)Tj
+-18.517 -3.6 TD
+0.02 Tw
+[(The origins of our T)80(o)25(wer of Babel are historical and psychological.)-520.1(There is a certain amount of Not)]TJ
+-2.5 -1.2 TD
+0.0045 Tw
+[(In)40(v)15(ented Here, some issues with cop)10(yright and license, opinions on what is modern and what the future will)]TJ
+T*
+-0.0001 Tc
+0.0001 Tw
+[(look lik)9.9(e, and strong bre)24.9(w)-250.1(o)-0.1(f)-250.1(technical arrogance.)]TJ
+2.5 -1.56 TD
+0 Tc
+0.0366 Tw
+[(Probably the tide cannot be held back.)-536.6(That ship, I’m often told, has already sailed.)-536.7(And surely one)]TJ
+-2.5 -1.2 TD
+0.0848 Tw
+[(audience reading one paper at one conference will not stem the tide, or unsail the ship, or whate)25(v)15(e)0(r)55(.)55( )-304.9(But)]TJ
+T*
+0.0071 Tw
+[(perhaps if we chart the course we ha)20(v)15(e)15( )-15(been on, we can, slo)25(wly)65(,)-257.1(steer the ship and sail to)25(w)10(ard a better desti-)]TJ
+T*
+0 Tw
+[(nation, instead of straight to T)70(erra Incognita, with no one at the helm.)]TJ
+/TT2 1 Tf
+0 -2.4 TD
+[(History of Ev)10(erything)]TJ
+/TT6 1 Tf
+2.5 -1.56 TD
+0.1511 Tw
+[(The history of e)25(v)15(erything is re-in)40(v)15(ention. )-250.1(The)-401.2(be)15(ginning programmer re-in)40(v)15(ents simple tools and)]TJ
+-2.5 -1.2 TD
+0.0655 Tw
+[(e)25(v)25( )305.5(entually disco)15(v)15(ers v)15(ery fe)25(w)-315.5(simple)]TJ
+/TT4 1 Tf
+15.3518 0 TD
+[(sui g)10(eneris)]TJ
+/TT6 1 Tf
+4.7318 0 TD
+[(tools are better than those found in /usr/bin.)-565.5(After about)]TJ
+/TT7 1 Tf
+-20.0836 -1.2 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.1736 Tw
+[(v)15(e)-423.7(years, though, the be)15(ginning programmer becomes an intermediate programmer)40(,)-423.6(and there disaster)]TJ
+-0.5562 -1.2 TD
+-0.245 Tw
+[(a)15(w)15( aits.)]TJ
+2.5 -1.56 TD
+0.0328 Tw
+(It is hard today to )Tj
+/TT7 1 Tf
+7.4682 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0328 Tw
+[(nd an)15(y)-282.8(Unix subsystem or function that hasn’)18(t)-282.8(been)]TJ
+/TT4 1 Tf
+21.1196 0 TD
+0 Tw
+[(r)37(epeatedly)]TJ
+/TT6 1 Tf
+4.4661 0 TD
+0.0329 Tw
+[(re-in)40(v)15(ented, often)]TJ
+-36.1101 -1.2 TD
+-0.0002 Tc
+0.0016 Tw
+[(to little or no ef)24.8(fect. )-250.1(lpd\(8\))-251.7(ga)19.8(v)14.8(e)14.8( )-15.1(w)9.8(ay to CUPS.)-501.6(/etc/rc.conf ga)19.8(v)19.8( )246.4(e)-251.6(w)9.8(ay)-251.6(to)-251.6(/etc/rc.d. )-250(init\(8\))-251.6(led to systemd\(8\).)]TJ
+T*
+0 Tc
+0 Tw
+[(Naturally)65(,)]TJ
+/TT4 1 Tf
+4.2165 0 TD
+[(ther)37(e)-255.1(wer)37(e)-255.1(r)37(easons)]TJ
+/TT6 1 Tf
+7.7642 0 TD
+0.0052 Tw
+[(—)-255.2(perhaps e)25(v)15(en)-255.2(good reasons — to replace system)]TJ
+/TT4 1 Tf
+20.6953 0 TD
+0 Tw
+(ante)Tj
+/TT6 1 Tf
+1.9769 0 TD
+0.0052 Tw
+(with sytem)Tj
+/TT4 1 Tf
+4.6769 0 TD
+0 Tw
+(post)Tj
+/TT6 1 Tf
+1.667 0 TD
+[(.)-505.2(But)]TJ
+-40.9967 -1.2 TD
+0.0858 Tw
+[(the observ)25(able adv)25(ancement, from the user’)55(s)-335.8(point of vie)25(w)-335.8(o)0(r)-335.8(b)0(y)-335.8(a)0(n)15(y)15( )-15(objecti)25(v)15(e)15( )-15(measure, w)10(as close to nil.)]TJ
+T*
+0.0889 Tw
+[(V)111(ery fe)25(w)-338.9(e)15(xamples can be found where the functionality of)25(fered by the replacement could not ha)20(v)15(e)15( )-15.1(been)]TJ
+T*
+0 Tw
+(added to the replaced, with less dislocation and need to “upgrade”.)Tj
+2.5 -1.56 TD
+0.0037 Tw
+[(So it is with documentation.)-503.8(T)80(o)80( )-80.1(in)40(v)40( )228.7(ent a system for encoding and rendering documentation is not dif-)]TJ
+/TT7 1 Tf
+-2.5 -1.2 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0996 Tw
+[(cult. )-249.9(Neither)-349.5(are the problems inherent in an)15(y)-349.6(g)0(i)25(v)25( )339.6(en)-349.6(system hard to see \(although the ob)15(vious ones are)]TJ
+-0.5562 -1.2 TD
+0.1232 Tw
+[(usually not the important ones\).)-623.2(The goal seems equally simple, e)25(v)15(en)-373.2(if)-373.2(it)-373.2(pr)]TJ
+32.2213 0 TD
+-0.015 Tc
+0 Tw
+(ove )Tj
+1.7869 0 TD
+0 Tc
+0.1231 Tw
+[(harder to achie)25(v)15(e)15( )-15(than)]TJ
+-34.0082 -1.2 TD
+0.0593 Tw
+[(articulate. )-250(So)-309.3(it is not surprising we ha)20(v)15(e)15( )-15(a)15( )-15(succession of tools and systems all hoping to slay the dragon,)]TJ
+T*
+0 Tw
+[(and mak)10(e)-250(documentation safe in our time.)]TJ
+/TT2 1 Tf
+0 -2.4 TD
+(History of Documentation Systems)Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.1151 Tw
+[(The halc)15(yon days of documentation systems were the 1990s, just before Bill Gates disco)15(v)15(ered the)]TJ
+-2.5 -1.2 TD
+0.0372 Tw
+[(Internet. )-249.9(There)-287.1(w)10(a)0(s)-287.1(a)-287.1(brief and glorious struggle — well, not all that glorious, really)65(.)-537.2(The dust settled just)]TJ
+T*
+0.0253 Tw
+[(about when the dotcom b)20(ubble b)20(urst, in 2000.)-525.4(Each team retreated to its corner)40(,)-275.3(and a cold truce settled on)]TJ
+T*
+0 Tw
+[(the w)10(orld.)]TJ
+2.5 -1.56 TD
+0.0641 Tw
+[(Perhaps the most widely used on a commercial scale w)10(as from IBM: the)]TJ
+/TT4 1 Tf
+30.0107 0 TD
+0.0642 Tw
+[(Standar)37(d)-314.2(Gener)15(al Markup)]TJ
+-32.5107 -1.2 TD
+0 Tw
+[(Langua)10(g)10(e)]TJ
+/TT6 1 Tf
+4.3658 0 TD
+0.1357 Tw
+[(\(SGML\). )-250.1(It)-385.8(w)10(a)0(s)-385.8(SGML that in)40(v)15(ented what we no)25(w)-385.7(call)]TJ
+/TT4 1 Tf
+23.8744 0 TD
+0 Tw
+(semantic)Tj
+/TT6 1 Tf
+3.9404 0 TD
+0.1357 Tw
+(tags, and distinguished the)Tj
+-32.1806 -1.2 TD
+0.0688 Tw
+[(declared meaning from the rendered formatting style.)-568.8(SGML is still with us today)65(.)-568.8(It’)55(s)-318.8(still supported by)]TJ
+T*
+-0.0001 Tc
+0.0382 Tw
+[(Jade, and still with us — in humbler form — in XML and HTML.)-538.2(Docbook be)14.9(gan)-288.2(a)-0.1(s)-288.2(a)-0.1(n)-288.2(“SGML applica-)]TJ
+T*
+0 Tc
+0.0304 Tw
+[(tion”, a standardized set of tags designed for technical documentation.)-530.5(Latterly)65(,)-280.5(Docbook de)25(v)15(elopment has)]TJ
+T*
+0 Tw
+[(f)10(a)20(v)20(ored XML, with its simpli)]TJ
+/TT7 1 Tf
+11.699 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+(ed schema-de)Tj
+/TT7 1 Tf
+5.4692 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+(nition language.)Tj
+-15.7806 -1.56 TD
+0.1069 Tw
+[(The system de)25(v)15(eloped by Bell Labs,)]TJ
+/TT4 1 Tf
+15.4035 0 TD
+0 Tw
+[(tr)45(of)18(f)]TJ
+/TT6 1 Tf
+1.6597 0 TD
+0.1068 Tw
+[(,)-356.8(w)10(as as dif)25(ferent as could be: a direct typesetter with no)]TJ
+-19.5632 -1.2 TD
+0.0426 Tw
+[(imposed structure and no e)15(xplicit machinery to enforce separation of semantics from style.)-542.7(Instead of dic-)]TJ
+T*
+0.1084 Tw
+[(tionaries of opaque tags, trof)25(f)-358.5(pro)15(vided sets of macros that users were free to e)15(xtend or ignore or ab)20(use.)]TJ
+T*
+0.0564 Tw
+[(The w)10(onderful, programmable )]TJ
+/TT7 1 Tf
+12.6548 0 TD
+0 Tw
+(ß)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0564 Tw
+[(e)15(xibility w)10(as a feature to user and a b)20(ug to management: freedom for one)]TJ
+-13.211 -1.2 TD
+0.0376 Tw
+[(is to the other loss of control.)-537.6(It should be no surprise that lar)18(ge, top-do)25(wn or)18(ganizations such as IBM and)]TJ
+T*
+0 Tw
+[(the military preferred SGML to trof)25(f.)]TJ
+2.5 -1.56 TD
+-0.0001 Tc
+0.0393 Tw
+[(A)-289.3(third ri)24.9(v)24.9(a)-0.1(l)-289.3(i)-0.1(n)-289.3(the fray came from what might be called an or)17.9(ganization: the Free Softw)9.9(are F)14.9(ounda-)]TJ
+-2.5 -1.2 TD
+0 Tc
+0.2529 Tw
+[(tion. Richard)-252.9(Stallman )250(de)25(v)15(eloped)]TJ
+/TT4 1 Tf
+13.8573 0 TD
+-0.178 Tw
+[(T)92(e)92( xinfo)]TJ
+/TT6 1 Tf
+2.8875 0 TD
+0.0028 Tw
+[(,)-252.9(and the GNU project still considers that the One T)35(rue F)15(ormat for)]TJ
+-16.7449 -1.2 TD
+0.0374 Tw
+[(documentation. )-249.9(Because)-287.3(it is designed only for technical manuals, it bears none of the o)15(v)15(erhead of SGML)]TJ
+T*
+0 Tw
+(and has none of the )Tj
+/TT7 1 Tf
+8.0254 0 TD
+(ß)Tj
+/TT6 1 Tf
+0.5562 0 TD
+[(e)15(xibility of trof)25(f. †)]TJ
+-6.0815 -1.56 TD
+0.1771 Tw
+[(Not to be o)15(v)15(erlook)10(ed are language-speci)]TJ
+/TT7 1 Tf
+17.0335 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.1771 Tw
+[(c documentation systems and their emulators: ja)20(v)25(a)25( )-24.9(and)]TJ
+/TT4 1 Tf
+-20.0896 -1.2 TD
+0 Tw
+(javadoc)Tj
+/TT6 1 Tf
+3.1655 0 TD
+0.1499 Tw
+[(,)-399.9(perl and)]TJ
+/TT4 1 Tf
+4.4482 0 TD
+0 Tw
+(perldoc)Tj
+/TT6 1 Tf
+3.0547 0 TD
+0.1499 Tw
+[(,)-399.9(Python and)]TJ
+/TT4 1 Tf
+5.7275 0 TD
+0 Tw
+(pydoc)Tj
+/TT6 1 Tf
+2.3877 0 TD
+0.15 Tw
+[(,)-399.9(etc. )-249.9(And)-399.9(of course Doxygen, which might be vie)25(wed as)]TJ
+-18.7837 -1.2 TD
+0 Tw
+[(ja)20(v)25(adoc for C++.)]TJ
+ET
+0 G
+1 J 1 j 0.32 w 10 M []0 d
+1 i 
+72.03 91.59 m
+144.03 91.59 l
+S
+BT
+8 0 0 8 82 81.5999 Tm
+0.0575 Tw
+[(†)-250(T)70(e)15(xinfo can be used as a preprocessor for another system not discussed here in an)15(y)-307.5(detail: T)]TJ
+38.2264 -0.224 TD
+0 Tw
+(E)Tj
+0.4858 0.224 TD
+0.3075 Tw
+(X. T)Tj
+1.9739 -0.224 TD
+0 Tw
+(E)Tj
+0.4858 0.224 TD
+0.3075 Tc
+[(Xw)317.5(a)307.5(s)]TJ
+-42.422 -1.25 TD
+0 Tc
+0.0454 Tw
+[(de)25(v)15(eloped not as a)]TJ
+/TT4 1 Tf
+7.8056 0 TD
+0 Tw
+(documentation)Tj
+/TT6 1 Tf
+6.2389 0 TD
+0.0455 Tw
+[(system, b)20(ut as a system for producing documents.)-545.5(It has ne)25(v)15(e)0(r)-295.5(played much)]TJ
+-14.0444 -1.25 TD
+0 Tw
+[(of a role is Unix documentation e)15(xcept to generate printed matter from T)70(e)15(xinfo.)]TJ
+10 0 0 10 249.545 24 Tm
+[(19 No)15(v)15(ember 2020)]TJ
+ET
+endstream
+endobj
+12 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+14 0 obj
+<<
+/Length 7090
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 282.17 744 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(-3-)Tj
+-18.517 -3.6 TD
+0.1052 Tw
+[(Owing to the popularity of Ja)20(v)25(aScript and GitHub, in recent years)]TJ
+/TT4 1 Tf
+27.7167 0 TD
+0 Tw
+(markdown)Tj
+/TT6 1 Tf
+4.5774 0 TD
+0.1052 Tw
+[(has become popular)55(.)]TJ
+-34.7941 -1.2 TD
+0.1928 Tw
+[(Popular)40(,)-442.8(b)20(ut simplistic: no cross-references, no table of contents, no inde)15(x. )-250(In)-442.8(the battle for semantic)]TJ
+T*
+0 Tw
+[(markup, markdo)25(wn has no dog: it’)55(s)-250(pure formatting.)]TJ
+2.5 -1.56 TD
+0.0074 Tw
+[(Finally)65(,)-257.4(w)0(e)-257.4(should mention)]TJ
+/TT4 1 Tf
+11.1584 0 TD
+0 Tw
+(mandoc)Tj
+/TT6 1 Tf
+3.166 0 TD
+0.0073 Tw
+[(,)-257.4(which the BSD systems ha)20(v)15(e)15( )-15(generally adopted for the base sys-)]TJ
+-16.8245 -1.2 TD
+0.0105 Tw
+[(tem to render man pages. mandoc e)15(xists for that e)15(xact purpose: not to replace trof)25(f, b)20(ut to render man pages)]TJ
+T*
+0 Tw
+(without it by processing the)Tj
+/TT4 1 Tf
+11.3599 0 TD
+(man)Tj
+/TT6 1 Tf
+1.9722 0 TD
+(and)Tj
+/TT4 1 Tf
+1.6938 0 TD
+(mdoc)Tj
+/TT6 1 Tf
+2.416 0 TD
+[(trof)25(f)-250(macros.)]TJ
+/TT2 1 Tf
+-17.4419 -2.4 TD
+[(Str)18(engths of Documentation Systems)]TJ
+/TT6 1 Tf
+2.5 -1.56 TD
+[(Let’)55(s)-250(summarize the relati)25(v)15(e)15( )-15(strengths of each system.)]TJ
+/TT2 1 Tf
+-2.5 -1.56 TD
+(SGML)Tj
+/TT8 1 Tf
+3.1948 0 TD
+<0041>Tj
+/TT6 1 Tf
+1.2368 0 TD
+[(consistenc)15(y)]TJ
+-1.9316 -1.2 TD
+0.0661 Tw
+[(SGML di)25(vides the informational content from typesetting considerations.)-816.2(By presenting the author)]TJ
+T*
+-0.0001 Tc
+0.0941 Tw
+[(only with opaque semantic tags, it reserv)14.9(es for the or)17.9(ganization decisions about font and color and)]TJ
+T*
+0 Tc
+0 Tw
+(layout.)Tj
+/TT2 1 Tf
+-2.5 -1.56 TD
+[(tr)18(off)]TJ
+/TT8 1 Tf
+2.1749 0 TD
+<0041>Tj
+/TT6 1 Tf
+1.2368 0 TD
+(typesetting)Tj
+-0.9117 -1.2 TD
+0.0785 Tw
+[(W)40(ith its macro f)10(acility)65(,)-328.6(trof)25(f)-328.6(allo)25(ws, b)20(ut does not enforce, the use of semantic tags.)-578.6(The author has)]TJ
+T*
+0.0897 Tw
+[(complete control o)15(v)15(e)0(r)-339.8(e)25(v)15(ery typesetting choice if so desired.)-589.8(trof)25(f)-339.8(i)0(s)-339.8(the most ambitious typesetter)40(,)]TJ
+T*
+0 Tw
+[(too: not only tables and footnotes, b)20(ut mathematics, pictures, and graphs.)]TJ
+/TT2 1 Tf
+-2.5 -1.56 TD
+[(T)92(exinf)25(o)]TJ
+/TT8 1 Tf
+3.4108 0 TD
+<0041>Tj
+/TT6 1 Tf
+1.2368 0 TD
+(accessibility)Tj
+-2.1476 -1.2 TD
+0.1056 Tw
+[(Alone among these system, T)70(e)15(xinfo includes a reader \(tw)10(o, if you count emacs\).)-605.6(Not only does it)]TJ
+T*
+0.0575 Tw
+[(support an inde)15(x, b)20(ut the user can access an inde)15(x)15(e)0(d)-307.5(item from the command line or by typing)]TJ
+ET
+0 G
+1 J 1 j 0.4 w 10 M []0 d
+1 i 
+485.79 469.47 7.32 -9.96 re
+S
+BT
+10 0 0 10 487.814 462 Tm
+0.5076 Tc
+0 Tw
+[(Ii)507.6(n)]TJ
+-39.0814 -1.2 TD
+0 Tc
+[(the vie)25(wer)55(.)]TJ
+/TT2 1 Tf
+-2.5 -1.56 TD
+(Doxygen)Tj
+/TT8 1 Tf
+3.9722 0 TD
+<0041>Tj
+/TT6 1 Tf
+1.2368 0 TD
+[(con)40(v)15(enience)]TJ
+-2.709 -1.2 TD
+-0.0001 Tc
+0.1147 Tw
+[(The source-code documentation systems all share the philosophy)-364.8(that some documenttion is better)]TJ
+T*
+0 Tc
+0.0063 Tw
+[(than no documentation, and that programmers are more apt to update the documentation if it’)55(s)-256.3(staring)]TJ
+T*
+0 Tw
+[(them in the f)10(ace when the)15(y)-250(change the code.†)]TJ
+/TT2 1 Tf
+-2.5 -1.56 TD
+[(markdo)10(wn)]TJ
+/TT8 1 Tf
+4.9075 0 TD
+<0041>Tj
+/TT6 1 Tf
+1.2368 0 TD
+(simplicity)Tj
+-3.6443 -1.2 TD
+0.0518 Tw
+[(Nothing \(almost\) to learn, easy to read.)-551.9(Get something up in a hurry)65(,)-301.9(and don’)18(t)-301.8(w)10(orry about consis-)]TJ
+T*
+0 Tw
+[(tenc)15(y)-250(o)0(r)-250(the printed page.)]TJ
+/TT2 1 Tf
+-2.5 -1.56 TD
+(mandoc)Tj
+/TT8 1 Tf
+3.6392 0 TD
+<0041>Tj
+/TT6 1 Tf
+1.2368 0 TD
+(just man pages)Tj
+-2.376 -1.2 TD
+0.0912 Tw
+[(mandoc has only one objecti)25(v)15(e)0(:)-341.2(t)0(o)-341.2(render man pages.)-591.3(W)80(ell, tw)10(o)-341.3(objecti)25(v)15(es: also to render the man)]TJ
+T*
+0 Tw
+[(page using softw)10(are with a BSD license.)]TJ
+/TT2 1 Tf
+-2.5 -2.4 TD
+[(F)25(eatur)18(e)-250(Set Comparison)]TJ
+0 -2.16 TD
+1.25 Tw
+[(System )-1391(VT)92(-100 HTML PDF Semantic)-250(tags Indexed Hyperlinks)]TJ
+/TT6 1 Tf
+0 -1.2 TD
+3.983 Tw
+(SGML no)Tj
+/TT9 1 Tf
+11.7268 0 TD
+3.245 Tc
+0 Tw
+[<001600160003>2093<0016>]TJ
+/TT6 1 Tf
+15.4875 0 TD
+0 Tc
+(no)Tj
+/TT9 1 Tf
+5.7345 0 TD
+<0016>Tj
+/TT6 1 Tf
+-32.9488 -1.2 TD
+[(grof)25(f)-250(man)]TJ
+/TT9 1 Tf
+7.1332 0 TD
+<0016>Tj
+/TT6 1 Tf
+4.1094 0 TD
+(meh)Tj
+/TT9 1 Tf
+4.4832 0 TD
+4.675 Tc
+<00160016>Tj
+/TT6 1 Tf
+11.4878 0 TD
+0 Tc
+(no)Tj
+/TT9 1 Tf
+5.6095 0 TD
+<0016>Tj
+/TT6 1 Tf
+-32.823 -1.2 TD
+[(grof)25(f)-250(mdoc)]TJ
+/TT9 1 Tf
+7.1332 0 TD
+<0016>Tj
+/TT6 1 Tf
+4.1094 0 TD
+(meh)Tj
+/TT9 1 Tf
+4.4832 0 TD
+4.675 Tc
+<00160016>Tj
+/TT6 1 Tf
+11.4878 0 TD
+0 Tc
+(no)Tj
+/TT9 1 Tf
+5.6095 0 TD
+<0016>Tj
+/TT6 1 Tf
+-32.823 -1.2 TD
+-0.195 Tw
+[(T)70(e)70( xinfo)]TJ
+/TT9 1 Tf
+7.133 0 TD
+3.838 Tc
+0 Tw
+[<00160016>593<0016>]TJ
+/TT6 1 Tf
+13.5391 0 TD
+0 Tc
+(meh)Tj
+/TT9 1 Tf
+6.6637 0 TD
+4.857 Tc
+<00160016>Tj
+/TT6 1 Tf
+-27.3359 -1.2 TD
+0 Tc
+3.095 Tw
+(Doxygen no)Tj
+/TT9 1 Tf
+11.7265 0 TD
+0 Tw
+<0016>Tj
+/TT6 1 Tf
+4.1554 0 TD
+[(?)-4347(meh)]TJ
+/TT9 1 Tf
+11.4545 0 TD
+4.857 Tc
+<00160016>Tj
+/TT6 1 Tf
+-27.3364 -1.2 TD
+0 Tc
+2.148 Tw
+[(markdo)25(wn meh)]TJ
+/TT9 1 Tf
+11.726 0 TD
+0 Tw
+<0016>Tj
+/TT6 1 Tf
+3.8774 0 TD
+4.18 Tw
+[(no no)-5180.5(no)]TJ
+/TT9 1 Tf
+17.345 0 TD
+0 Tw
+<0016>Tj
+/TT6 1 Tf
+-32.9484 -1.2 TD
+(mandoc)Tj
+/TT9 1 Tf
+7.133 0 TD
+3.838 Tc
+[<00160016>593<0016>-837<0016>]TJ
+/TT6 1 Tf
+20.0805 0 TD
+0 Tc
+(no)Tj
+/TT9 1 Tf
+5.7345 0 TD
+<0016>Tj
+/TT2 1 Tf
+-32.9481 -3 TD
+(Myths of Documentation Systems)Tj
+2.5 -1.56 TD
+0.0817 Tw
+[(Documentation is easy)55(,)-331.7(o)0(r)-331.7(should be)]TJ
+/TT6 1 Tf
+15.688 0 TD
+[(.)-581.7(T)80(o)-331.7(write documentation is to set aside telling the computer)]TJ
+-18.188 -1.2 TD
+0.0308 Tw
+[(what to do, and to tak)10(e)-280.8(u)0(p)-280.8(the reader’)55(s)-280.8(point of vie)25(w: What does it do, and ho)25(w)-280.8(d)0(o)-280.8(I)-280.8(use it?)-530.8(No)]TJ
+/TT4 1 Tf
+38.862 0 TD
+0 Tw
+(system)Tj
+/TT6 1 Tf
+2.9468 0 TD
+(can)Tj
+-41.8088 -1.2 TD
+0.0909 Tw
+[(mak)10(e)-341(that transition easy; it has to be accepted, undertak)10(en, and practiced.)-590.9(It’)55(s)-340.9(not for e)25(v)15(eryone, and it’)55(s)]TJ
+ET
+0.32 w 
+72.03 111.99 m
+144.03 111.99 l
+S
+BT
+8 0 0 8 82 102 Tm
+-0.0001 Tc
+0.0334 Tw
+[(†)-250.1(The e)24.9(vidence in support of that proposition is nil or ne)14.9(gati)24.9(v)14.9(e)-0.1(.)-533.3(Lousy documentation based on such system)]TJ
+-1.25 -1.25 TD
+0 Tc
+0.0996 Tw
+[(abounds, and e)15(xcellent results are rare indeed.)-599.6(Observ)15(e)-349.6(that Unix itself w)10(as documented with separate docu-)]TJ
+T*
+0 Tw
+(mentation )Tj
+/TT7 1 Tf
+4.278 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.029 Tw
+[(les, the method still used by the BSDs today)65(,)-279(t)0(o)-279(generally positi)25(v)15(e)15( )-15(re)25(vie)25(ws. If lazy programmers are)]TJ
+-4.8342 -1.25 TD
+0 Tw
+[(reluctant to write documentation, making the ef)25(fort less onerous, on the e)25(vidence, does nothing for the quality of)]TJ
+T*
+(the results.)Tj
+10 0 0 10 249.545 24 Tm
+[(19 No)15(v)15(ember 2020)]TJ
+ET
+endstream
+endobj
+15 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT8 16 0 R
+/TT9 17 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+19 0 obj
+<<
+/Length 7404
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 282.17 744 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(-4-)Tj
+-21.017 -3.6 TD
+(de)Tj
+/TT7 1 Tf
+0.9438 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+(nitely not for the programmer while programming.)Tj
+/TT2 1 Tf
+1 -1.56 TD
+0.0378 Tw
+[(Write once, r)18(ender e)15(v)10(erywher)18(e)]TJ
+/TT6 1 Tf
+13.3239 0 TD
+0 Tw
+[(.)-537.8(The)]TJ
+/TT4 1 Tf
+2.6303 0 TD
+[(pr)45(omise)]TJ
+/TT6 1 Tf
+3.465 0 TD
+0.0378 Tw
+[(of man)15(y)-287.8(systems is that, if the author will only write)]TJ
+-21.9191 -1.2 TD
+0 Tw
+(the )Tj
+/TT7 1 Tf
+1.5648 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0931 Tw
+[(ne manual, the system will repay the ef)25(fort by rendering it in e)25(v)15(ery desired format and v)15(enue. Y)110(our)]TJ
+-2.1209 -1.2 TD
+0 Tw
+[(Name In Lights. The reality is dif)25(ferent:)]TJ
+5 -1.56 TD
+0.0884 Tw
+[(•)-2150(The quality of the rendered output is une)25(v)15(en.)]TJ
+/TT4 1 Tf
+21.662 0 TD
+0 Tw
+(No)Tj
+/TT6 1 Tf
+1.5055 0 TD
+0.0885 Tw
+(system today is equally good at pro-)Tj
+-20.6675 -1.2 TD
+0 Tw
+[(ducing PDF and HTML output, and rendering usefully in a terminal windo)25(w)65(.)]TJ
+-2.5 -1.56 TD
+0.1691 Tw
+[(•)-2150(The properties of each medium are dif)25(ferent, and af)25(fect ho)25(w)-419.1(the content is best pre-)]TJ
+2.5 -1.2 TD
+0.0496 Tw
+[(sented. )-250(Book)-299.6(publishers gi)25(v)15(e)15( )-15(consideration to ho)25(w)-299.6(t)0(e)15(x)0(t)-299.6(and )]TJ
+/TT7 1 Tf
+24.5012 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0496 Tw
+(gures relate on the printed)Tj
+-25.0573 -1.2 TD
+0.1061 Tw
+[(page. )-250.1(Sidebars)-356.2(are helpful, e)15(xcept in a terminal. Floating menus can w)10(ork w)10(onders in)]TJ
+T*
+0 Tw
+(HTML, not so much on the printed page.)Tj
+-5 -1.56 TD
+0.0479 Tw
+[(Proof: rare is the document that renders equally well in tw)10(o)-297.9(formats out of three.)-547.9(None)15(xistent is the)]TJ
+-2.5 -1.2 TD
+0.0689 Tw
+[(one that does so without much thought and ef)25(fort on the part of the author)55(.)-568.9(I)0(t)-318.9(w)10(asn’)18(t)-318.9(written)]TJ
+/TT4 1 Tf
+38.2912 0 TD
+0 Tw
+(once)Tj
+/TT6 1 Tf
+1.8877 0 TD
+0.3189 Tc
+[(;i)318.9(tw)328.9(a)318.9(s)]TJ
+-40.1789 -1.2 TD
+0 Tc
+[(written man)15(y)-250(times, carefully)65(.)]TJ
+2.5 -1.56 TD
+0.0967 Tw
+[(In planning a better documentation system, there is no media-neutral solution.)-596.8(W)40(ithout considered)]TJ
+-2.5 -1.2 TD
+0 Tw
+[(ef)25(fort,)]TJ
+/TT4 1 Tf
+2.848 0 TD
+[(e)15(very)]TJ
+/TT6 1 Tf
+2.5519 0 TD
+0.1522 Tw
+[(document will be inherently biased to w)10(ork best in one medium or another)55(.)-652.3(It’)55(s)-402.3(useful to)]TJ
+-5.3999 -1.2 TD
+0 Tw
+(understand that your preferred medium in)Tj
+/TT7 1 Tf
+16.689 0 TD
+(ß)Tj
+/TT6 1 Tf
+0.5562 0 TD
+(uences what you think is the “best” system.)Tj
+/TT2 1 Tf
+-14.7451 -1.56 TD
+0.0431 Tw
+(Indexing is automatic)Tj
+/TT6 1 Tf
+9.3093 0 TD
+0.0432 Tw
+[(.)-543.1(Good documentation is curated, and no system inde)15(x)15(e)0(s)-293.2(k)10(e)15(y)0(w)10(ords automati-)]TJ
+-11.8093 -1.2 TD
+0.0073 Tw
+[(cally)65(.)-507.3(Sure, the whole te)15(xt can be inde)15(x)15(e)0(d)-257.3(indiscriminately)65(.)-507.3(But the job of deciding where a term is de)]TJ
+/TT7 1 Tf
+41.1942 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+(ned)Tj
+-41.7503 -1.2 TD
+[(and discussed remains, in 2018, the job of an editor)55(.‡)]TJ
+/TT2 1 Tf
+2.5 -1.56 TD
+0.0225 Tw
+[(The web is the futur)18(e)]TJ
+/TT6 1 Tf
+9.1272 0 TD
+[(.)-522.5(The web is not your machine; it’)55(s)-272.5(not e)25(v)15(en)-272.5(you virtual machine in the cloud.)]TJ
+-11.6272 -1.2 TD
+0.1655 Tw
+[(The most reliable documentation for the system you are using is that which is included.)-665.4(Furthermore,)]TJ
+T*
+0.2216 Tw
+[(inde)15(x- and k)10(e)15(yw)10(ord-searches are not supported by the general-purpose web bro)25(wser)40(,)-471.7(nor by standard)]TJ
+T*
+0 Tw
+(HTML.)Tj
+/TT2 1 Tf
+2.5 -1.56 TD
+0.0849 Tw
+[(tr)18(off is obsolete)]TJ
+/TT6 1 Tf
+6.7055 0 TD
+0.0848 Tw
+[(.)-584.9(trof)25(f)-334.9(refuses to go gentle into that good night.)-584.9(The “blame” is usually placed on)]TJ
+-9.2055 -1.2 TD
+0.0545 Tw
+[(the e)15(xisting man pages: who will re)25(write them in the ne)25(w)65(,)65( )-65.1(“modern” system? But the f)10(act is that ne)25(w)-304.6(man)]TJ
+T*
+0 Tw
+[(pages are written e)25(v)15(ery day)65(,)-250(not least because trof)25(f)-250(i)0(s)-250(s)0(o)-250(darn functional.)]TJ
+/TT2 1 Tf
+0 -2.4 TD
+[(Myths of T)74(r)18(off)]TJ
+2.5 -1.56 TD
+0.039 Tw
+[(tr)18(off is dead)]TJ
+/TT6 1 Tf
+5.226 0 TD
+0.0389 Tw
+[(.)-539(There are three acti)25(v)15(e)15( )-15(trof)25(f)-288.9(projects: GNU, Heirloom, and neatrof)25(f. )-250(That)-288.9(e)15(xcludes the)]TJ
+-7.726 -1.2 TD
+0 Tw
+[(acti)25(v)15(e)15( )-15(projects trying to)]TJ
+/TT4 1 Tf
+9.6792 0 TD
+[(mak)10(e)]TJ
+/TT6 1 Tf
+2.3499 0 TD
+(it obsolete.)Tj
+/TT2 1 Tf
+-9.5291 -1.56 TD
+0.0671 Tw
+[(tr)18(off is inferior to T)]TJ
+8.4699 -0.224 TD
+0 Tw
+(E)Tj
+0.542 0.224 TD
+(X)Tj
+/TT6 1 Tf
+0.7222 0 TD
+0.0671 Tw
+[(.)-567.1(Science students are generally advised to learn T)]TJ
+20.6401 -0.224 TD
+0 Tw
+(E)Tj
+0.4858 0.224 TD
+0.0672 Tw
+[(X, and told it’)55(s)-317.2(the cat’)55(s)]TJ
+-33.36 -1.2 TD
+0.0104 Tw
+[(pajamas for preparing manuscripts.)-510.4(And it might be; Knuth de)25(v)15(eloped T)]TJ
+29.057 -0.224 TD
+0 Tw
+(E)Tj
+0.4858 0.224 TD
+0.0104 Tw
+[(X)-260.4(i)0(n)-260.4(part because of his dismay at)]TJ
+-29.5428 -1.2 TD
+0.0005 Tw
+[(the quality of the output of mathematical notation in trof)25(f. )-250(On)-250.5(the other hand, modern T)]TJ
+35.0848 -0.224 TD
+0 Tw
+(E)Tj
+0.4858 0.224 TD
+0.0006 Tw
+[(X)-250.6(systems are v)15(ery)]TJ
+-35.5706 -1.2 TD
+0.1337 Tw
+[(comple)15(x, 100 times the size of an)15(y)-383.7(trof)25(f)-383.7(implementation, and the technical adv)25(antage of T)]TJ
+37.6129 -0.224 TD
+0 Tw
+(E)Tj
+0.4858 0.224 TD
+0.1336 Tw
+[(X)-383.7(i)0(s)-383.6(easy to)]TJ
+-38.0987 -1.2 TD
+0.0793 Tw
+[(o)15(v)15(erstate. )-250(I)-329.3(challenge the reader of the present document, for e)15(xample, to )]TJ
+/TT7 1 Tf
+30.6163 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0794 Tw
+[(nd a paragraph that w)10(ould be)]TJ
+-31.1724 -1.2 TD
+0 Tw
+[(better rendered by the paragraph-at-once algorithm instead of the line-at-a-time one that w)10(as used.)]TJ
+/TT2 1 Tf
+2.5 -1.56 TD
+[(As an author)92(,)-250(t)0(r)18(off is ugly and hard to use)]TJ
+/TT6 1 Tf
+17.7811 0 TD
+(.)Tj
+-17.7811 -1.56 TD
+[(Compared to what?)-500(Pound for pound, trof)25(f)-250(i)0(s)-250(easier to use and more capable than an)15(ything else.)]TJ
+T*
+0.0646 Tw
+[(The best SGML systems are enormously complicated.)-564.7(And e)15(xpensi)25(v)15(e)0(.)-564.6(The)15(y)-314.6(support great catalogs)]TJ
+-2.5 -1.2 TD
+0.0636 Tw
+(of tags and transformations, plus a rich UI to let the user connect the abstract tagging sytem to a concrete)Tj
+T*
+0 Tw
+(concurrent rendering.)Tj
+2.5 -1.56 TD
+0.102 Tw
+[(Nothing resembling those SGML systems is a)20(v)25(ailable as free softw)10(are. )-250.1(The)-352(UI presented by Doc-)]TJ
+-2.5 -1.2 TD
+0.0662 Tw
+[(Book is, for the most part, the same one that is presented by C++: a te)15(xt editor)40(,)-316.2(a)-316.2(command-line utility to)]TJ
+T*
+0.1002 Tw
+[(“compile” it, and a web bro)25(wser or PDF vie)25(wer)55(.)-600.2(N)0(o)-350.2(Docbook author re)25(v)15(els in the sea of tags that o)15(v)15(e)0(r)20(-)]TJ
+T*
+0 Tw
+(whelm the content.)Tj
+ET
+0 G
+1 J 1 j 0.32 w 10 M []0 d
+1 i 
+72.03 81.99 m
+144.03 81.99 l
+S
+BT
+8 0 0 8 82 72 Tm
+[(‡)-250(A)0(n)-250(editor with a nose, not an init )]TJ
+/TT7 1 Tf
+14.1646 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+(le.)Tj
+10 0 0 10 249.545 24 Tm
+[(19 No)15(v)15(ember 2020)]TJ
+ET
+endstream
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+22 0 obj
+<<
+/Length 3989
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 282.17 744 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(-5-)Tj
+/TT11 1 Tf
+8 0 0 8 108 708 Tm
+(<table id="tab.Protocol.by.Product">)Tj
+2.4 -1.5 TD
+(<title>Versions of the <acronym>TDS</> Protocol, by Product</title>)Tj
+T*
+(<tgroup cols="3">)Tj
+2.4 -1.5 TD
+(<thead>)Tj
+2.4 -1.5 TD
+0.6 Tw
+(<row> <entry>Product</entry>)Tj
+2.4 -1.5 TD
+0 Tw
+(<entry>TDS Version</entry>)Tj
+T*
+(<entry>Comment</entry>)Tj
+T*
+(</row>)Tj
+-2.4 -1.5 TD
+(</thead>)Tj
+-2.4 -1.5 TD
+(<tbody>)Tj
+2.4 -1.5 TD
+(<row>)Tj
+2.4 -1.5 TD
+(<entry>Sybase before System 10,)Tj
+4.45 -1.5 TD
+(Microsoft SQL Server 6.x</entry>)Tj
+-4.45 -1.5 TD
+(<entry>4.2</entry>)Tj
+T*
+(<entry>Still works with all products,)Tj
+4.45 -1.5 TD
+(subject to its limitations. </entry>)Tj
+/TT6 1 Tf
+10 0 0 10 97 506.4 Tm
+0.1254 Tw
+[(trof)25(f)-375.3(w)10(as and is the only typesetting language designed e)15(xpressly for the user to input “by hand”,)]TJ
+-2.5 -1.2 TD
+0.1175 Tw
+[(without the aid of a sophisticated UI and tag dictionary)65(.)-617.5(I)0(n)-367.5(constrast to the v)15(erbosity of SGML, trof)25(f)-367.5(i)0(s)]TJ
+T*
+0 Tw
+[(minimalist. )-250(The)-250(same table fragment ab)]TJ
+16.1338 0 TD
+-0.015 Tc
+0.03 Tw
+[(ove i)-15(s)]TJ
+2.5808 0 TD
+0 Tc
+0 Tw
+[(entered in trof)25(f)-250(as:)]TJ
+/TT11 1 Tf
+8 0 0 8 108 464.4 Tm
+(.ds TDS \\f[CW]TDS\\f[])Tj
+0 -1.5 TD
+(.SH)Tj
+T*
+(Versions of the \\*[TDS] Protocol, by Product)Tj
+T*
+(.PP)Tj
+T*
+(.TS)Tj
+T*
+(LB LB LB)Tj
+T*
+1.2 Tc
+(LLL.)Tj
+T*
+0 Tc
+1.45 Tw
+[(Product TDS)-600(Version )-725(Comment)]TJ
+T*
+0 Tw
+(_)Tj
+T*
+(Sybase before System 10, Microsoft SQL Server 6.x\\)Tj
+3.125 -1.5 TD
+(4.2\\)Tj
+T*
+(Still works with all products, subject to its limitations.)Tj
+-3.125 -1.5 TD
+(.TE)Tj
+T*
+(.NL)Tj
+/TT6 1 Tf
+10 0 0 10 72 290.4 Tm
+0.0277 Tw
+[(Half the typing: 229 characters v)15(ersus 586 for Docbook.)-527.7(And, by minimizing the markup, it’)55(s)-277.7(easier to see)]TJ
+0 -1.2 TD
+0 Tw
+(the forest for the trees.)Tj
+2.5 -1.56 TD
+[(W)40(ithout doubt, the idiosyncrasies of trof)25(f)-250(are of)25(f-putting. ’T)80(w)10(a)0(s)-250(e)25(v)15(e)0(r)-250(thus.)]TJ
+/TT4 1 Tf
+2.5 -1.56 TD
+0.2214 Tw
+(In spite of some obvious de)Tj
+/TT12 1 Tf
+11.9664 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5 0 TD
+0.2214 Tw
+[(ciencies — a r)37(ebarbative input syntax, mysterious and)]TJ
+-12.4664 -1.2 TD
+0.3939 Tw
+[(undocumented pr)45(operties in some ar)37(eas, and a vor)15(acious appetite for computer)]TJ
+T*
+0.0852 Tw
+[(r)37(esour)37(ces \(especially when used with macr)45(o)-335.3(pac)20(ka)10(g)10(e)0(s)-335.3(and pr)37(epr)45(ocessor)10(s)-335.2(lik)10(e)-335.2(EQN and)]TJ
+T*
+0.0016 Tw
+[(TBL\) — TR)40(OFF has been the basis of document pr)37(epar)15(ation at Bell Labs for some year)10(s,)]TJ
+T*
+0 Tw
+[(and is lik)10(ely to r)37(emain so for year)10(s)-250(t)0(o)-250(come)15(.)]TJ
+/TT6 1 Tf
+T*
+[(—)-250(Brian K)25(ernighan,)]TJ
+/TT4 1 Tf
+8.4174 0 TD
+[(A)-250(T)74(ypesetter)20(-independent TR)40(OFF)]TJ
+/TT6 1 Tf
+-13.4174 -1.56 TD
+0.1685 Tw
+[(The ne)25(w)-418.6(trof)25(f)-418.6(user is immediately af)25(fronted by the “rebarbati)25(v)15(e)15( )-15(syntax”. )-250(Lik)10(e)-418.5(parenthesis in Lisp and)]TJ
+0 -1.2 TD
+0.2157 Tw
+[(whitespace in Python, though, the leading dots and tw)10(o-letter commands† pose no real problem, and)]TJ
+T*
+0.0164 Tw
+[(quickly become “just the w)10(ay it is”.)-516.4(I)-266.4(h)0(a)20(v)20( )261.4(e)-266.4(yet to meet the user who spent se)25(v)15(eral hours with trof)25(f)-266.4(and then)]TJ
+T*
+0 Tw
+[(sw)10(ore of)25(f)-250(i)0(t)-250(because of its of)25(fensi)25(v)15(e)15( )-15(syntax.)]TJ
+/TT2 1 Tf
+0 -2.4 TD
+[(The T)74(r)18(ouble with T)74(r)18(off)]TJ
+/TT6 1 Tf
+2.5 -1.56 TD
+[(The trouble with trof)25(f)-250(i)0(s)-250(i)0(n)-250(the)]TJ
+/TT4 1 Tf
+12.3334 0 TD
+[(e)20(xperience)]TJ
+/TT6 1 Tf
+4.3101 0 TD
+(.)Tj
+ET
+0 G
+1 J 1 j 0.32 w 10 M []0 d
+1 i 
+72.03 81.99 m
+144.03 81.99 l
+S
+BT
+8 0 0 8 82 72 Tm
+[(†)-250(technically)65(,)]TJ
+/TT4 1 Tf
+5.5717 0 TD
+[(r)37(equests)]TJ
+/TT6 1 Tf
+3.296 0 TD
+[(,)-250(o)0(r)-250(macros.)]TJ
+10 0 0 10 249.545 24 Tm
+[(19 No)15(v)15(ember 2020)]TJ
+ET
+endstream
+endobj
+23 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT11 24 0 R
+/TT12 25 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+27 0 obj
+<<
+/Length 7059
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 282.17 744 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(-6-)Tj
+-18.517 -3.6 TD
+0.0243 Tw
+[(De)25(v)15(elopment of the trof)25(f)-274.4(U)0(I)-274.4(ceased, along with just about the whole Unix UI, 20 years ago.)-524.4(The last)]TJ
+-2.5 -1.2 TD
+0.2371 Tw
+[(specialized man page vie)25(wer w)10(a)0(s)]TJ
+/TT4 1 Tf
+14.7276 0 TD
+0 Tw
+(xman)Tj
+/TT6 1 Tf
+2.166 0 TD
+0.237 Tw
+[(,)-487.1(a)-487.1(t)0(o)10(y)10( )-10.1(from the MIT Athena project.)-737(Computing po)25(wer has)]TJ
+-16.8937 -1.2 TD
+0 Tw
+[(increased by 3 orders of magnitude, and all we got w)10(as a really f)10(ast)]TJ
+/TT2 1 Tf
+27.1651 0 TD
+(less)Tj
+/TT6 1 Tf
+1.5 0 TD
+(\(1\).)Tj
+-26.1651 -1.56 TD
+[(Lack of a con)40(v)15(enient vie)25(wer might be)]TJ
+/TT4 1 Tf
+15.3306 0 TD
+(the)Tj
+/TT6 1 Tf
+1.4717 0 TD
+(central reason for documentation fragmentation.)Tj
+/TT2 1 Tf
+-19.3023 -1.56 TD
+[(A)25(ppearance)]TJ
+/TT6 1 Tf
+2.5 -1.2 TD
+0.0624 Tw
+[(The author does not breathe who does not care ho)25(w)-312.4(the prose is rendered on the page.)-562.5(If appealing)]TJ
+T*
+0.0421 Tw
+[(output didn’)18(t)-292.2(matter)40(,)-292.2(you’)50(d)-292.2(b)0(e)-292.2(reading this page in a monospace font on greenbar paper)40(,)-292.1(and the Zen)]TJ
+T*
+0 Tw
+[(CSS Garden w)10(ouldn’)18(t)-250(e)15(xist.)]TJ
+/TT2 1 Tf
+-2.5 -1.56 TD
+[(Con)40(v)10(enience)]TJ
+/TT6 1 Tf
+2.5 -1.2 TD
+0.1108 Tw
+(While typing)Tj
+/TT4 1 Tf
+5.7206 0 TD
+(man foo)Tj
+/TT6 1 Tf
+3.7216 0 TD
+[(is surely the f)10(astest w)10(ay to get to a document, it’)55(s)-360.8(f)10(ar from the best w)10(ay to)]TJ
+-9.4422 -1.2 TD
+0.0103 Tw
+[(peruse documentation.)-510.3(T)35(r)0(y)]TJ
+/TT4 1 Tf
+11.2425 0 TD
+(man X)Tj
+/TT6 1 Tf
+2.8536 0 TD
+0 Tw
+(or)Tj
+/TT4 1 Tf
+1.0933 0 TD
+0.0103 Tw
+(man git)Tj
+/TT6 1 Tf
+3.0381 0 TD
+[(,)-260.3(for e)15(xample. )-250.1(Hyperlinks)-260.2(ha)20(v)15(e)15( )-15(their place and purpose,)]TJ
+-18.2275 -1.2 TD
+0 Tw
+(and their state of the art today is undeniably in HTML.)Tj
+0 -1.56 TD
+0.0761 Tw
+[(But, really)65(,)-326.1(i)0(s)-326.1(that enough?)-576.2(Can we ask no more of our documentation system than that ne)25(w)-326.2(pages)]TJ
+-2.5 -1.2 TD
+0 Tw
+[(come up when we click on the blue underlined te)15(xt?)]TJ
+/TT2 1 Tf
+0 -2.4 TD
+(The Ideal Documentation System)Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.1354 Tw
+[(Man pages look the w)10(ay the)15(y)-385.5(do, and are used the)15(y)-385.5(w)10(ay the)15(y)-385.4(are, because the a)20(v)25(ailable softw)10(are)]TJ
+-2.5 -1.2 TD
+0 Tw
+(mostly emulates the state of the art circa 1976.)Tj
+2.5 -1.56 TD
+0.0957 Tw
+[(Close your e)15(yes no)25(w)-345.7(and imagine a documentation system that does what you w)10(ant. )-250.1(What)-345.8(does it)]TJ
+-2.5 -1.2 TD
+0 Tw
+[(look lik)10(e? )-250(A)-250(bit lik)10(e)-250(a)0(n)-250(e-book reader)40(,)-250(b)20(ut smarter)40(,)-250(and with a k)10(e)15(yboard.)]TJ
+/TT2 1 Tf
+0 -1.56 TD
+[(F)25(ast)]TJ
+/TT6 1 Tf
+5.556 0 TD
+(It )Tj
+/TT7 1 Tf
+0.8608 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+[(nds the page quickly)65(,)-250(scrolls quickly)65(,)-250(and searches quickly)65(.)]TJ
+/TT2 1 Tf
+-6.973 -1.56 TD
+(Accurate)Tj
+/TT6 1 Tf
+5.5557 0 TD
+[(Inde)15(x)-250(searches locate de)]TJ
+/TT7 1 Tf
+9.7296 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+[(nitions and discussions, not incidental uses of the same w)10(ord.)]TJ
+/TT2 1 Tf
+-15.8415 -1.56 TD
+[(Con)40(v)10(enient)]TJ
+/TT6 1 Tf
+5.5562 0 TD
+0.0421 Tw
+[(Hyperlinks to internal and e)15(xternal references can be follo)25(wed at a k)10(e)15(ystrok)10(e)-292.1(o)0(r)-292.1(mouse click.)]TJ
+/TT4 1 Tf
+-0.0002 -1.2 TD
+0.0511 Tw
+[(See the description of shopt below under SHELL B)10(UIL)20(TIN COMMANDS)]TJ
+/TT6 1 Tf
+30.0354 0 TD
+[(isn’)18(t)-301.2(just a sugges-)]TJ
+-30.0354 -1.2 TD
+0.1604 Tw
+[(tion; it’)55(s)-410.4(a)0(n)-410.4(a)0(f)25(fordance. The table of contents let you jump to the rele)25(v)25(ant section.)-660.4(Inde)15(x)]TJ
+T*
+0.0609 Tw
+[(searches can jump to the referenced use, or display a list of conte)15(xt sentences that are them-)]TJ
+T*
+0.0401 Tw
+[(selv)15(es links into the body of the document.)-540.1(The SEE ALSO section can be searched concur)20(-)]TJ
+T*
+0 Tw
+(rently with the main document.)Tj
+/TT2 1 Tf
+-5.556 -1.56 TD
+[(Attracti)10(v)10(e)]TJ
+/TT6 1 Tf
+5.5556 0 TD
+0.0045 Tw
+[(The full f)10(aith and credit of the GUI is behind it.)-504.5(Colors and font sizes are con)]TJ
+/TT7 1 Tf
+31.165 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+[(gurable.)-504.6(Gone)]TJ
+-31.7208 -1.2 TD
+[(are monospace fonts, e)15(xcept where the)15(y)-250(add information or mak)10(e)-250(the te)15(xt easier to read.)]TJ
+/TT2 1 Tf
+-5.556 -1.56 TD
+(Flexible)Tj
+/TT6 1 Tf
+5.5552 0 TD
+0.029 Tw
+[(There are dif)25(ferent w)10(ays and needs to read a document.)-529(Sometimes it’)55(s)-279(the )]TJ
+/TT7 1 Tf
+30.6371 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.029 Tw
+[(rst time.)-529(Some-)]TJ
+-31.1924 -1.2 TD
+0.0297 Tw
+[(times it’)55(s)-279.7(time to dig in and really understand.)-529.7(Sometimes it’)55(s)-279.7(a)-279.7(quick lookup of an option or)]TJ
+T*
+0 Tw
+[(k)10(e)15(yw)10(ord.)]TJ
+/TT2 1 Tf
+-5.556 -1.56 TD
+(Consistent)Tj
+/TT6 1 Tf
+5.5565 0 TD
+0.0705 Tw
+(Consistent document structure, consistent document placement, consistent document format,)Tj
+-0.0005 -1.2 TD
+0.0669 Tw
+[(consistent document rendering.)-566.9(The more consistent is the documentation, the easier it is to)]TJ
+T*
+0 Tw
+(access, to understand, and to use.)Tj
+/TT2 1 Tf
+-5.556 -1.56 TD
+(Graphical)Tj
+/TT6 1 Tf
+5.5555 0 TD
+[(F)15(o)0(r)-250(those times when a picture or a diagram or an equation helps tell the story)65(.)]TJ
+/TT2 1 Tf
+-5.5555 -1.56 TD
+(Integrated)Tj
+/TT6 1 Tf
+5.556 0 TD
+0.0593 Tw
+[(If documenting a command, where is the e)15(x)15(ecutable, and what does)]TJ
+/TT4 1 Tf
+27.9746 0 TD
+0 Tw
+(it)Tj
+/TT6 1 Tf
+0.865 0 TD
+0.0593 Tw
+[(say about its v)15(ersion?)]TJ
+-28.8396 -1.2 TD
+0 Tw
+(If a function, where is the object code, and where is the supporting source?)Tj
+/TT2 1 Tf
+-5.556 -2.4 TD
+[(Str)18(engths of T)74(r)18(off)]TJ
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0245 Tw
+[(GNU trof)25(f)-274.5(\(grof)25(f\) already pro)15(vides all the artif)10(acts needed by the ideal documentation system.)-524.6(It can)]TJ
+-2.5 -1.2 TD
+0.0764 Tw
+[(output plain te)15(xt, HTML, Postscript, and PDF directly)65(.)-576.4(There are macro sets for books, reports, manuals,)]TJ
+T*
+-0.0001 Tc
+0.0001 Tw
+(and presentations. It supports HTML and PDF hyperlinks.)Tj
+2.5 -1.56 TD
+0 Tc
+0.0036 Tw
+[(Man pages, while the)15(y)-253.6(v)25(ary in quality)65(,)-253.6(already do contain all the information needed by the ideal doc-)]TJ
+-2.5 -1.2 TD
+0.2456 Tw
+[(umentation system.)-745.7(The syntax — whether command-line options or ar)18(gument functions — is fully)]TJ
+T*
+0 Tw
+(described.)Tj
+2.5 -1.56 TD
+0.0017 Tw
+[(Much of the po)25(wer of trof)25(f)-251.7(currently goes une)15(xploited. )-500(Unlik)10(e)]TJ
+/TT4 1 Tf
+25.5738 0 TD
+0 Tw
+(any)Tj
+/TT6 1 Tf
+1.6955 0 TD
+0.0017 Tw
+[(other freely a)20(v)25(ailable documenta-)]TJ
+-29.7694 -1.2 TD
+0.0014 Tw
+[(tion system, trof)25(f)-251.5(has b)20(uilt-in support for mathematics and graphics.)-501.4(It’)55(s)-251.4(also quite tri)25(vial to construct tables)]TJ
+17.7545 -4.68 TD
+0 Tw
+[(19 No)15(v)15(ember 2020)]TJ
+ET
+endstream
+endobj
+28 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+30 0 obj
+<<
+/Length 6580
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 282.17 744 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(-7-)Tj
+-21.017 -3.6 TD
+[(automatically from database queries, e)25(v)15(en)-250(on)-250(the )]TJ
+/TT7 1 Tf
+19.7857 0 TD
+(ß)Tj
+/TT6 1 Tf
+0.5562 0 TD
+-0.065 Tc
+(y.)Tj
+/TT2 1 Tf
+-20.3418 -2.76 TD
+0 Tc
+[(Arr)18(esting Obser)10(v)10(ation)]TJ
+/TT6 1 Tf
+2.5 -1.56 TD
+0.255 Tw
+(In 30 years, no)Tj
+/TT4 1 Tf
+7.2129 0 TD
+0 Tw
+(better)Tj
+/TT6 1 Tf
+2.8375 0 TD
+0.255 Tw
+[(system has been in)40(v)15(ented. )-250(Equi)25(v)25(alent systems, ar)18(guably)65(,)-505(perhaps,)]TJ
+-10.0504 -1.2 TD
+0.0918 Tw
+[(depending on ho)25(w)-341.8(one rates the missing and added features.)-591.8(But no system completely sub-)]TJ
+T*
+0 Tw
+[(sumes the feature set, let alone impro)15(v)15(e)0(s)-250(o)0(n)-250(it.)]TJ
+-2.5 -1.56 TD
+[(That f)10(act alone is a testament to the durability and utility and functionality of trof)25(f.)]TJ
+/TT2 1 Tf
+0 -2.4 TD
+[(Better Documentation Thr)18(ough T)74(r)18(off)]TJ
+/TT6 1 Tf
+2.5 -1.56 TD
+[(A)-250(better vie)25(wer w)10(ould moti)25(v)25(ate better man pages.†)-500(As things stand, an)15(y)-250(discussion of “better” tags is)]TJ
+-2.5 -1.2 TD
+0.0064 Tw
+[(academic: while it may be clearer)40(,)-256.4(i)0(n)-256.4(some sense, to say that a bit of te)15(xt is an ar)18(gument or a function name,)]TJ
+T*
+0.0424 Tw
+[(kno)25(wing the system will underline it or boldf)10(ace it, it’)55(s)-292.5(also one more le)25(v)15(e)0(l)-292.5(o)0(f)-292.4(indirection to learn and use.)]TJ
+T*
+0.0773 Tw
+[(The user sees no dif)25(ference. )-250(If,)-327.3(on the other hand, the system someho)25(w)-327.4(used the f)10(act that the name is an)]TJ
+T*
+0.0285 Tw
+[(option name and not merely emphasized te)15(xt, the author no)25(w)-278.6(has a concrete reason to pro)15(vide the informa-)]TJ
+T*
+0 Tw
+(tion.)Tj
+2.5 -1.56 TD
+0.0693 Tw
+[(Other systems could be brought into the fold.)-569.4(Programmatic con)40(v)15(ersion of T)70(e)15(xinfo, for e)15(xample, is)]TJ
+-2.5 -1.2 TD
+0.0364 Tw
+[(already supported and could doubtless be impro)15(v)15(ed. )-250(The)-286.4(content is there, e)25(v)15(en)-286.4(if)-286.4(the approach is inconsis-)]TJ
+T*
+0 Tw
+(tent.)Tj
+2.5 -1.56 TD
+0.0352 Tw
+(The language-speci)Tj
+/TT7 1 Tf
+7.837 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0352 Tw
+[(c systems, such as ja)20(v)25(adoc, can certainly be con)40(v)15(erted to trof)25(f)-285.3(man pages with a)]TJ
+-10.8931 -1.2 TD
+0.1774 Tw
+[(certain amount of patience and willingness to mak)10(e)-427.4(assumptions. )-250(Continuous,)-427.4(automatic con)40(v)15(ersion is)]TJ
+T*
+0 Tw
+[(probably not feasible; a one-time con)40(v)15(ersion with touch-ups is.)]TJ
+2.5 -1.56 TD
+0.0601 Tw
+[(Arbitrary formats usually in f)10(act ha)20(v)15(e)15( )-15(suf)]TJ
+/TT7 1 Tf
+16.8409 0 TD
+0 Tw
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.0601 Tw
+[(cient information to mak)10(e)-310.2(a)-310.2(creditable con)40(v)15(ersion to man)]TJ
+-19.897 -1.2 TD
+0.01 Tw
+[(page format.)-510(Y)110(our humble author produced man pages from Sub)15(v)15(ersion help te)15(xt. )-250(Someone)-260(else con)40(v)15(erted)]TJ
+T*
+0.0355 Tw
+[(SQLite’)55(s)-285.5(web documentation to man pages.)-785.5(The standard structure of a man page lends itself to program-)]TJ
+T*
+0 Tw
+(matic generation if a little boilerplate is tolerable.)Tj
+/TT2 1 Tf
+0 -2.4 TD
+[(My Kingdom f)25(or a V)37(iewer)]TJ
+/TT6 1 Tf
+2.5 -1.56 TD
+(The )Tj
+/TT7 1 Tf
+1.9346 0 TD
+(Ş)Tj
+/TT6 1 Tf
+0.5562 0 TD
+0.1298 Tw
+[(rst step in correcting an)15(y)-379.9(problem is recognizing it.)-629.9(No one who has e)15(xamined the state of)]TJ
+-4.9907 -1.2 TD
+0.0588 Tw
+[(Unix documentation w)10(ould defend it as satisf)10(actory)65(,)-308.8(much less ideal.)-558.8(F)15(o)0(r)-308.8(that last 15 years, the answer to)]TJ
+T*
+0 Tw
+[(the w)10(ay forw)10(ard has been hands in pock)10(ets while whistling a happ)10(y)-250(tune.)]TJ
+2.5 -1.56 TD
+[(Let’)55(s)-250(not k)10(eep our light under a bask)10(et an)15(ymore.)]TJ
+T*
+0.0343 Tw
+[(Despite being the best we ha)20(v)15(e)0(,)-284.4(such as it is, trof)25(f)-284.3(has untapped capacity)65(.)-534.3(That capacity goes unreal-)]TJ
+-2.5 -1.2 TD
+0.0337 Tw
+[(ized because it is, literally)65(,)-283.7(unrealized: it almost ne)25(v)15(e)0(r)-283.7(appears on screen.)-533.7(T)80(o)80( )-80(the e)15(xtent that trof)25(f)-55(’)55(s)-283.8(typeset-)]TJ
+T*
+0.0075 Tw
+[(ting capacity is re)25(v)15(ealed in PDF form, it’)55(s)-257.5(also)]TJ
+/TT4 1 Tf
+18.8573 0 TD
+0 Tw
+[(tr)15(apped)]TJ
+/TT6 1 Tf
+3.3533 0 TD
+0.0074 Tw
+[(there, in a system that is slo)25(w)-257.4(t)0(o)-257.4(load and render)40(,)-257.4(ill-)]TJ
+-22.2106 -1.2 TD
+0 Tw
+[(suited for searching, and generally not inte)15(grated into the rest of the system.)]TJ
+2.5 -1.56 TD
+(Put)Tj
+/TT2 1 Tf
+1.6614 0 TD
+(man)Tj
+/TT6 1 Tf
+1.8892 0 TD
+(\(1\),)Tj
+/TT2 1 Tf
+1.7434 0 TD
+[(inf)25(o)]TJ
+/TT6 1 Tf
+1.642 0 TD
+(\(1\),)Tj
+/TT2 1 Tf
+1.7434 0 TD
+(xman)Tj
+/TT6 1 Tf
+2.3892 0 TD
+(\(1\),)Tj
+/TT2 1 Tf
+1.7434 0 TD
+(xpdf)Tj
+/TT6 1 Tf
+1.9453 0 TD
+0.0774 Tw
+[(\(1\), and your f)10(a)20(v)20(orite web bro)25(wser into a blender)55(.)-577.5(Render man)]TJ
+-17.2573 -1.2 TD
+0.004 Tw
+[(pages in proportional font directly)65(,)-254.1(not through Postscript or PDF)80(,)-254.1(t)0(o)-254(s)0(a)20(v)20( )249(e)-254(time. )-250(Assign)-254(k)10(e)15(ys to jump to sec-)]TJ
+T*
+0.1092 Tw
+[(tion headers.)-609.2(Automatically search the SEE ALSO section.)-609.3(Mak)10(e)-359.3(i)0(t)-359.3(easy and enjo)10(yable to follo)25(w)-359.3(links,)]TJ
+T*
+-0.0002 Tc
+0.0002 Tw
+[(forw)9.8(ard and back again.)]TJ
+2.5 -1.56 TD
+0 Tc
+0.1068 Tw
+[(In f)10(act, today’)55(s)-356.8(bro)25(wser has the functionality to interpret and render trof)25(f)-356.8(documents. )-250(No)-356.8(need for)]TJ
+-2.5 -1.2 TD
+0 Tw
+[(HTML or PDF)80(.)]TJ
+2.5 -1.56 TD
+0.0518 Tw
+[(Build it, and the)15(y)-301.8(will come.)-801.9(A)-301.9(better vie)25(wer will engender better documentation, and a better user)]TJ
+-2.5 -1.2 TD
+0 Tw
+[(e)15(xperience. )-250(One)-250(day)65(,)-250(perhaps the)15(y)-250(will say:)]TJ
+/TT4 1 Tf
+2.5 -1.56 TD
+[(I)-250(switc)15(hed to your system because at least I could under)10(stand it)]TJ
+/TT6 1 Tf
+25.3319 0 TD
+(.)Tj
+ET
+0 G
+1 J 1 j 0.32 w 10 M []0 d
+1 i 
+72.03 91.95 m
+144.03 91.95 l
+S
+BT
+8 0 0 8 82 82 Tm
+[(†)-250(The)]TJ
+/TT4 1 Tf
+2.6017 0 TD
+(mdoc)Tj
+/TT6 1 Tf
+2.463 0 TD
+0.047 Tw
+(macro package has much better support for semantic tags \(and therefore more)Tj
+/TT4 1 Tf
+31.94 0 TD
+0 Tw
+(meaningful)Tj
+/TT6 1 Tf
+4.7965 0 TD
+(tags\))Tj
+-43.0512 -1.25 TD
+(than the “standard”)Tj
+/TT4 1 Tf
+7.9688 0 TD
+(man)Tj
+/TT6 1 Tf
+1.9722 0 TD
+(macros that GNU and Linux half-heartedly recommend.)Tj
+10 0 0 10 249.545 24 Tm
+[(19 No)15(v)15(ember 2020)]TJ
+ET
+endstream
+endobj
+31 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+8 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+32 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+33 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 653
+/Descent -250
+/Flags 98
+/FontBBox [-169 -217 1010 883]
+/FontName /Times-Italic
+/ItalicAngle -15
+/StemV 76
+/XHeight 441
+/StemH 76
+>>
+endobj
+34 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+35 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+36 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 701
+/CapHeight 0
+/Descent -298
+/Flags 4
+/FontBBox [-167 -299 1094 827]
+/FontName /DLPJCL+Symbol
+/ItalicAngle 0
+/StemV 0
+/FontFile2 37 0 R
+>>
+endobj
+37 0 obj
+<<
+/Filter /FlateDecode
+/Length 20022
+/Length1 39360
+>>
+stream
+H‰äW}tÕ¿ovgvfwv8DH8‡ÖŠPÁ„‚%ÅÀ‰©iœ–C9Ìî¾ÍÌ~03K6´JJ¤„¯šb ­¥©Õ”Ò”Rj)B“È‡Ø¢"-ß" R
+‚˜Æ@zßìì&@§Ö?óŞ™ùİß»÷½¹÷¾÷fŞ €~xsBö#Ş{ß™EóÈØ:ÇohQ`z ?À[q`¾™÷=YœŒ|7 7!4…îÃ:cŠEƒ¾»l)ò‘ •O†âå‘Ö{ŞÜğøf´‡r­2”Õïãá k†¢}S˜*ÁcÛV7¬­A>&ŒòîY€…hCÃ3¹Æ]Z…ü GŞc	Ã$®ª‡ u ^Óbe`Î§q¼7Ğ§§#J2.–P^F}^„šÊÛ‰/‰ ÕA qCT‰ĞPqPœ8â:_Êëß°mÄËq=¯Ü7ı«ëBıWÁá¬#«€'·[†#®H!9
+÷A'ô*èâ‡dÎ·¦x¼R7 ån¾áZ€°²4öê’wÿåì‡ñ°–ra´Àl8Ošá²F¥¨¡Úğ#`4:Z ÂV¼fq{±GFÁ ®¦BZ5 ÇâØ¾†´€›È5‘õĞÀ-$/ÀLÈ…»œ-p¾›È‡—¸Ùğ˜s1.^Ä^ÙÄ@&qS9Nª‡«Î±0…ŸÛ`4BÄq–›í*‚’€0…“0Ær~X	~n)l‡ƒd9DŞ%¥ÜØEºÈ~RÌ³ânÇHZø-0›¸¤` L§#¥/F}.Üş³+„±ïå×cüÓÈì5
+ÖÁjl_Åü&dõèI>¼%XïF^¬š/]ğ”ÂA~&4 ‡s,İG3ÉG©šo#Œ×; úÃ{d0†8ïâfKp¬MüÜ!®ªá*WÍo&Ça%ßˆùèOøjÎOR9™
+¥ürÔÜ†™‚8g$®ğ¥ğ*ÁeãÜ¼œÉÍküYNæ¦A8Ï_ ä^áËB3éà«†2Zx ºH¾°Œ|BŸëÇ.ş~÷ÂE€Ûo6ƒ	°Ç(Hà$ÅÄº>wÓqàøbl¯A¾¢<l2¹"h†âÖ7™"7€U´µb9¼`Óq;.%,İ¸ø]u¸LáÑÊˆ?¦Aw-c™Œø ²ñâİ}6©’û\&'ıqéµâÂ™Ô×s2m_&'¸³F³uòp_ÏIHËäÄ0©@*éë91gr’ğ­õx$ZÓ×s‚¥tN$<gİëdZ_ÏIê$éşöûüf³o:¦Ò“ßUJ¦g7á©õ+öSOŸ4	é×_!ÓÙ7‹Ã:	à“Ù\àÌàÎÅ}Œï4|Ãá¿‡øÎÇ/ ®^\Ë™r­ìÓ‚~œwx‘L±ÆıœHú¬¥ªJˆÆÌ ıĞÆE6VÛø¤‹mü‘Kl¬±q©Ël\nã
+WÚXkãS6®²qµOÛøŒu6şØÆ56>kc½km\gãOll°ñ9×Ûø¼/8''ôØOÅéqCÕbÑQ/
+5š0éÏ$—P´bHW¦‹ş\T£!5ªš•BH‹éjôÎ€–ğ¿ä
+ªJÿà~Éão˜n¾Ìq%H_‘]Uøcf¸)%j4dşÊe‰‰øF·%è*ÒcÑMB–ë”şFŠk	ƒyc4àğ¿•Q¡˜T·üÚ,Fš©ÆµÊßÉì÷+¦3m‹'>¨ŠTC¡ßş„¦Qs«Tç«Aúã¶º¿êAPç+è=JÇHZšm"Õ4büÉc¹5Ÿê&Mn—-Æ¸Ğä_ ©ª”£7fBîäq¤x¸E|³5[ş,–ÚÒ.OU©n˜ºb»}Uh4íû_Ü)Î‚mi$nVÔl“Õ(Æ‰a³˜ÚùDá5[ìFÍ=>†4šLó½Æf$ü(î“Ó¦Œí—Ó†Œ½î¢øx5¸Y.Rò¼-×è_År]	ªØğ7¯NËUÃrBWC}üÁµæÊâoú0š (ú\‹¿åÂóm  h‡\Á˜QÌğ;n-VÎZği‡Ó²ş]²å˜şTjƒ~-–#ÆÖËQwš%âÇ¼iÙòäxÆ-œ.-¶€FËéIÉŠ…u>%g¢P¢Æ»Ş ööÄ€ô=ÉHDĞaÌô¶„h”`ÆÏöš<×Cüæû^?îŒ¹ÔL~Ğ›Òä‡½©ß<ïa”¦Lÿ)gHD^èQùÍ¹,B“y\“½ä¶¢±¼şHdË§H»ìNKfüJF¦É3²ß¼*[¾Z=Íø'½Mvôb~óß>ÛUÛ¶óN“ŸŞÀıfWÊ}Ûúš·‡a4×{)ıf·ëk©7Mú.­ë]œv¹r£ææšêé¾ÌAl÷–ÉºKàËø2ÆœÖåÔQ¾¥:ulogÕu‡Øî©u7yj¥=R«<FjôÔòeîlëô}İSë©•K<GÄ3RRjõ¸]‚\â.•·J­|™÷u´«ÁÑŠÜ9ÖHç\‚8C¨“ù"©‘µHâë)x—]‚Tà	»;]§ñ:çÚè¸ßµÛ?3Âÿ¥zÎIçWÄv®‰eA¶KvSÖ©‘]BHlê˜0>wV*n±=¤Ælp×x‡»;å­Y{ä¹Ä;œİ=áŞ•qyƒ¼Á÷ïp–QOXjÄ™ñ]çø"¦—ë<aahOÅgYUŞÀ9ıîNVoÕ§æq•uƒ,<8\ƒ,ÈâßÂï¾ÛJáó—Üÿ¥1ï–üQ*ìaä3‡ÌKÏº¡uÛ‰}…íNÖtéYÿ±dAÁÍM…½²Ê¶ªŒOœaÒG½Œîd·¶qàÙˆ¹§v+ò7w;Y¼¢D|yçä'.´äO\|$÷“	hr‚d™—Û–ÛÑ•¿uHKÇÙç/Ø±ãÒN9÷ğn8‰ªæØ˜9ìvÂ¾ j:À‘³ÓÉfVğ ŒÁ][hûH²wGé?Ô—lçÇŸ÷ÃöÅ¹ÄgÇ“²æìÜÀÀŠB€•V¾8Np-•vHÂ§ÖµÍ@CĞRr	†DB	5²I*£kU•NÎG	0 -­Ñd +hÔ¡Ûšï¹³MRDHHhï«ûğû¼÷<¿ÿó~ÜÙœî ·ª3ê.\’Õã0Y¥XÑËJwµXò¸½e¢‹ì^Ï&	ö±L®õHá÷¿Ğ}±Ğ2·à*‚ã$¹£uÖ‘1‹b{wk“¥Y¿nô%iªÁèÔÃ0ÜË°Zò[-d4ê¥ ~R‰Œl×úÁÂBÃ©ö;~/«É1 s‘Ûƒ^­Œ@F%H<øuê(>V½:#)şpŞ)8N®ho	e¾Ò„t¼Ñi0Ú5Ù`äºc6ˆÃêV`Õ~&€”Š/èŒ‘!Fz|ó{ëñe´.·)_îL3B˜ìÏwä,±öªâv!£dmË[ç­YFF>êõ¡.UÓFzBÕõá?.“Êw¨í¯UxÇÏÅíÙj8Ô¨¸1ûÓªƒ'ı²#ÜmŸtèúÈ¶¶ñÃ/zŠ©"2Ö¸¨Å!ä
+ñ"	¬Qg–ïòœ9êõ©¾ÎÅk§¯ìÊe›<K…n¡C1Ù•­Js»ÁØ™dtˆMÖµgÆZG
+È(®(ëŸ±´*ÇuÏè [Ú½yÇ6GÂï5Wx'|v˜[Ô-ë¢1·éÓÙãß|§ô©™vébyüêœMùv·R§Pì½«jVôGqÌ‘V­…¬œ÷÷K9ñ¨Îø¥ø™²x’Ëß¥Ê²ÃšÚ(!#ß&ÏÕ ÓNÌãz¹{«Ü¼µ:c©˜[Òd¥?ZnFF‡CÈ-ik]*T‡‚í^)¸Q·lÅ<>â\VÃšĞÇÚ.5—9Ê=·Ú…ÎrW•„ŒÅJ½gi¿*:ªåšk}ÔßAª {ËjI<9§™ç«>S_§Ê’è P'Ëö±£LgwÚ<9‰¶Á'Úäf72*IÆ@ƒ3¼ÉGÇ››ğ5;$\Já†0Ï¾Ø­‚…ËQ·4Ux½N‘Óc0¾^Ú<ÓS>Ñ1ÄX÷îŞ*óæÿ!qínÄáD#€o0ÿZ#I2uübñ¤Q"Èè!€¬8Ö û3Üc †yüõO[yìKæÑ%Z´<dvèy”mçBá0æÄEÈ¸ ×ÌF;ßÕ¤¯	'Ôñ$cC™'Øí&šñ-êa1öôæ|s=Goò‘8×Çº¾¡Ó1¥õèìVÆ:Y³>¸è2jV{¾‘Ç›<-;€ëóqAzÍT†œtãÉM’ .,\Ø:çDÖÛ8UAYæõú)ø×Q<Üx÷‚ w5WÊëÄ.}>ÜõÂøyå{(]ò“C_;wİ¨Ó×®ï’ı5æ§æ£¾ìÍK%ıB	Áó§¦¶_’"²£çcÒø%‹Á*uóñ}ïAgœ}>É˜9k7¼´«¾Œ=³ÚR…ëzv¼¶·6Ñ3zZ|EÛ–£ı=»VœôÌÎş:q®+Şå‹xÚùHÙ³0ı[gÑñË¯»~Õ{eUMî=Q_pA¨Éuí	Ö’Ai’ÈuS«ÎZØÆ>Ø’—\×µ‰¥.ª3ŠBÄX×”Ë±"\{«Å²Î½îQb™-–Úîå¡7Ù››Iîˆún'å¤ÔF‡9Cù¶HÅMO»p
+¤‹–:°ÔD‡…Ñ]æõ#£Ê»=È(¤Èéî0tssÉÆèÑ¨¨3Ü`Täò$#b„a±SßiF[?Ä-ÃHÆ³-ÕV•óGsÅ2)mˆ|Ø°’­Ÿ,µEAªJ1ÂÆirMFbT‡Nu.¸mÃĞ°6#"ğ¢Ñ¶Ã•w€v'…€ì0s<&Â$˜ Ÿ_Ù3áq˜OÁXÏâwÍJXuğ
+„a4A+´Á^ØïÂûĞSpÎÃe¸ÿ†Ab!ò É'?$SÈ£ÄOÊÉ2ŸT“gÉJò2ÑH˜¼JZÈNòÙGŞ&ÉŸI9F>&§I/¹@.‘«ä?”PµQ'Í¥n:†>D¦*-£³é<ú4ı­¤KîA}®¤/Ò:ºn¡¯Ñ6ú;ú}vÑOèúıí£ı4ÁÌ,‹}=Àd6–MdSY›Á‚ìI¶€-e/°Õ¬½ÊZX{“½Ã±ÙIvšEÙEv…pÊE>‚»ù>™Oá?æ¥ü1ş4_ÊŸç/ñz¾‘oæÛù¾¿ËÿÄòxïä‡ù1~‚ÂOñ^åç—øeãÿäÿâü:4Q“Ù”aÊÂê$<qSI·àûá
+áÌD2ˆ…
+8s3‰™¢sj!eÆÁÑb!F¥7ÎEQ`¥f<2i†qd¤îĞµ+ÍÂ{«qº[-$cé½LØj"V¢GÊĞ}áX›±ú#&¼
+Éš²èWİ’‰Ş,º¬Lo¿…·Ñ\¨ÿ’ê44“aÅ(6’xè
+Ø‚a·¤É˜Í”AlÄÊDT"ê¹Ãì‰ØGW>ì@Å†ÙEÔ¢GÑ3aø§zê5ìØÏ<T9ÆâXÑf"Ül5£7j66ıLĞ†ÏÁ4êë89xºpY·ãÙŒmKîÑq_Š7Ån¼ú¹$‡ãßè}/Âí»ï+h©{³-æB-“;y^ôs[üÿN‹s¸¡@F-ó:¹TÙ"òû¤…ë×İhñÓ’-¨¨%X‚Zî–¼~˜vk‹~Ùß\îRIDÓ}Ó2B×b ?tWZFÿos l©¨ıœú™¹µÊ”–”Ñàd]=ßí?IkiÇ/_Aâct-ÙrĞHj‰
+Û:˜f|ñXIO$?¶ô›­Á÷Ñh©¶«+q!îYÛ/ÕXbkŠ|ƒæ}•HôEl=	Ÿ/¡=h9vÍE+õó™¯ÿØ&®; àß÷ŞÅ>àâœ“Ô;ƒç\~¢Uç… føBÈ¶liı1i«Î	
+c£`ÖnDS”\Bâ$“C’ÒIÎ`ƒLüÑ­İ
+eÓÖş1Î±Á©š6­“¦b+L©`#¨nnïíÊ/m«´½H‘¼»w¿÷ı¾ïsçŞĞÚ2¬Fãèô„î°äêÛöÛ–íã7v[WuëË;–˜%1†˜ÿ€­±ìEé.lY„å–‰U›Jë_€¢hòšÖ™Îîa²9à¥Ë¼¨ÄúbÑjI%‡$Æ)®·û5½áÀbä™€óI—­±,‹¨/=dšÕÄôP'—~ÊÕÀ,M»Eh¡Ç§Ãf{lx™)qá‡‘Y¸`XjõC+³\hk®ÉY.ˆZf¡Ã­˜íÖ.ŞÓ­YÔ)6(ÛÒz,ê—ôÃãìHÆ9¿Íçelß¹d`™Ea¿…İdñ‚j DjÑ5Á²¾õ0K%ën»méÎÔS¨°êUËRµ.›ó«†!/³qÆœĞêÓ™åìÍK–K×ëmgÊ'tXå0”à•0ä,³(Š{JMqCƒÇUî„ˆ¤Ó»(>{J‚9#gAç¶ÆÙ¤ÏÁHÜ8™´_¿ü¹œE†¨E>eSKÆ»y!#Š<|xN’mÇ,|ŞÒª®çõÉÒ"û ˜ãóÙ¾cÇô-øÙšï,ìâ*zhâ¶%¶n7˜%i,Yf+eG›½±®ô8µ†ß—4j/öÚÀ(NÔJÁãë}¾1=väüjhw¹\e0çîReuEÊÍÏ	³Ú‹‡Kº^)>?t³1‰î;ùÖ±›¬±iÉ‘P‹úEÍ$•	n-È¼HÏ”!£6#ıSÙœåÙ‘ÎÍâùª ÀGwÒ9´i¤ËUĞ?8*M:kC¥K‹]\E½‘ÑR_ÕÖíZ˜Wš¶™|[s¹¨²,~-‘\nÃ²T^ÖöjÕÑ^·©¬n¨­0Œö µ˜Ñ¸‡ZjË˜åÌ®”¦xÍ½ğ\ÿ e±•Ÿs¹Ó¯nÒÒ‘`úß)sµ]ø³Z,”Ò3}g>Ìªœ#:f‡Î 3Ù•_@	Ëò„MÛè³—ñäĞeÜDcLmFhpÔ
+–¾lÀ¬ê3ù‰¥u¸eB¡–Öm&gYF#I4É¼ÿˆèe–2ÁP{´õÊ¶¹”‚[$ÍøŠ5/ÑøO`°¬Öy˜Yº@UYñ-Ğ µÆl¸KI¿:96åÖ©%ø¢’Éì&®êD·e1#ŠÃ{im»¨c•EGAúéºdTÜ`YÖCş:;¿ïš|¼tõ‹Ô³‡ÜèñCÆÅ0”·°‹i¼ŒLìğ0‹<Dç%iYdk^˜¥vÿôâê×n™Ô¢2ë•ö+1ˆ}’O+9Ë—ÕŠ‡­5:µˆ•¼@¸œ…Ê¯î –ØtÄoY‚y‹­z¿*ÀLX7ÍK7­bï3ªZ³˜43ÃY–xÕçÿ†]t^TC`–jé3a–®1º¿Ì›/m¤3Ë7_¦kŒf‡!+^,‹<œá÷ì7¼	6/1Pè¼D4#h
+ÕÙƒ’_	[±»û±óœø+öPß‚[Ş"QKÚ²§#uÁ×—YPÍ!S€ºQjé¿R˜—]F:›—’ü3ö§$C²*¸²_]‰ gQÛx}ıDıú,İ%×åç%zVœl£µK‘eI´5yË€ÊÏ….I×¡’Ÿñ({¨%¨K´œ†şhärr\ŠjÙoådÌ)‚Ò>G-BÎR—¨¥rlÊé/óOo?9ÑTM-=Â/íà¥ÆÍ€=¾‡ÅømÈ™L¤ÀZcÈ\¸&UKƒúdQWq‹—6B4',…xiN¦éYÎ.³Ä°ÊG¦zê%C:š\Ôö¶…N/Íc
+BÑnB÷Jjé’:ˆk¯´g¡¢Ç\ÖÁòØÚËåî—+Ç~á[S1îñ?ÿç7¢±ùê§¾uşÜ©ÍÉ EÇğ^/Ñ5–ŠèIĞA#„ş
+íhĞ%-eO¯oşèİ_ÂêŠ0h¶ÍcŠ2’~=óy¬ót¯L¸ºW²œ,¨Z„Öü1¼íÖ°ãñ‘ZR×Í+Æ®ƒ1ûœ—å7š¿˜f<›Ï6öšãÙcY±1Ğë­Ïfö¬¹¨Èj¦hæ/¡ÊH2VQüOŞßh‡X,âOıî•t¶W"ĞØAÿhìÛ³\®³,jã–xì±Ğf{¢[å»û
+û‹¹ Ó&gióûÆ¼¥Àş‘e9À·½À,·ÏbX¼¬xXşú>M«Éõ4ê dö°,<ÙÆŸï$ë+j
+ıé#±ÇºG+Ô­ÿLÎ¿AéÔXµOÉ-f9Î¶nf—,´û¯,êC-÷¿Õİ–“Î—©Ë÷ì^¨ã×¦¨GÁ9¢
+ºÑ–[¸»:?¨Ùï´õ{YPJß”·?à^KËCGÍ·Ü Ô0Aæ©¥/K«æÿwš=÷_÷B •¿Z½Ûbè¡…ÜKÇîU°ÜçDww+XÖÉªe)MXfù_¶‡+ïİ­P©xÕñÿcùâø¼Eø-˜†Ã#ğiZÍ×Ãç¡	¶Òã“ğ4=Ìt@ì… !/ÁQ8¯Àiø5üÎÀ,\€÷à}øÜ€E´•"/zÕ¡zÔ„¾Œ¾†v£ï¡4 è—è·h½…ŞE—ĞUôtlÇ¥x^‹Ü€›ñğø)üÜ…¿¿‹{ñ0ÀSxÿ¿ßÄ	ü6şNá«ø:^$Ed%YED"}Uä³ä1ROHi'Ïò9@FH”L“SäMò;’$ïwÉûä¯ärƒd¹"ÎÁ¹¸n-·‘kæ¾Ä=É¹}Ü÷¹!n’û1÷3îWœÁ½Í½Ç¥ÿE{Õ Eu]ásï»ïíÛÜ·)«efß.‹‚ŠHZˆT6(Dí Áhjgdˆ•L'Q›V§FØèîQ@%‘ÖŸV:ÓhgêÄ¤- ¨ÑÑ™LkgÌ@[cÒ;QÆŸ×s/¢Æh:æ=ïí»?ç|÷Üßı‹]a·dUN’uyš<S.’çÈeò"y‰\#åˆü¦¼Kî”ß–ß“ËÉıò'òEù’ü…|U’o)D‘Eq*ÉJŠâQ¼Ê$eŠ2UÉVVf*Ï(EJ‰2åyñ²rW9şãÈT!	`&b'ã@%è˜˜ÁB¡2–˜aŒğ/"S,`Á6*±@±¡+>Ç+ªVœS	àÀÿã€«s¬XGÅú±EÒ5ÚĞ¢l„Û2[*Öäíy5®(˜£
+«¼…˜©™0Šm¥‡é?÷Ä{#Â8:Nh"ub*Qñ­
+„¿øÇ1Q'ãå6ÉN°…“÷•GûN„Pş-â ;XZ¡Vj%‰¸^¬€ŠñTâqJ &. DÂ8K(X‚£ àÕ–ÚÀ$‹2ñ4ó¸)X£‰¯cƒkÆUŒCŞÿù±YôXvˆÿ?¹lÈ¦¨G‡¾5¿ÜA˜ş¸‘hcÎ¥‡ qálï›3tØ˜áŞ¸ağ›xÊ¿ßõ]	YKåC‘ñôÅ‘ä4èİ-iÈzíAîÜGS Fœ<6ˆß,4aV©Pj“<É­›à¶o8s—‘Ú:ñZN/j,ğ„cIrÏÂK³¡’Aò¤œüœ@zá±ê­Í5ÖÍ}g;åÓ¡¾.ã¼~T;àB$aÆñk‹¸¯ÙHu·é _çƒ¢úƒ-Lm¶ÄÏI¤oÓ+ 7%·W¯¹ÒAGbâÉË»r{;"Qc©<&=¥Y‘”f®Ïzk
+_ÄÍëa¥!õ•èãÍN§¯¬%¬uíîğ«	¹ƒÄ> Á	]-©kwô$„4hH«’[ÃuôV"9>a™¿¬*³47JëC¯/öŒ")ÉÔIâŸ¯gEé¶^pµ‡öwi.—JC%ßÚú´`_Ô’”T¬•Tî®/@$KïÑñóïW¥½µ³¨ïO»‹ÛÒÌº¦*Sš´Ö8XHd§'•îÏ§e²´uéÆg«27¿ïî;rõêµ~V´*k‡¯Xúˆ³üPë«± ÿ¿Irì¹ÿ°#Ö®Û;ÆÏl›P}Q£Ö[òZ.´cûµ<ñQ¡V®û}!dËEó«¢ë};V®Ë*oÍªì4O¬»²Öïï¯5‡¶Øv§½7ÁdÔå¤¬n.\~ )]Ó}…Lõ©Ese¥†oÉ±ÇhiÜÓQæp5ÎÏ?Ì‘,KŞRê=¹ÓŞé1Åñ^	’__(œíğµÔû"şXÉdËi^}‰[å£ï©ˆşVñU”Ï®	$Mª2 í<&%2+®«„Î"ÛËí'«²\.Ms«vCËX¸Ñ‘NÊÛòŠC`æ1HÖ'm¹6]23Hßmú{Ä«U_ÔM½%ÏZDâq–LÀÑQ5¯dš@­ˆvFî qhù*éN¾Ö×ÕÄçÉdİ»äßÆÑñÌ³½<ïlU¶@VÕt=cnxF¬ªØÓ
+ä‹á«–¦e5¨ˆä7½Ó£^İåÕWÚŞ¡ÕûšN3Ÿ±ÍkÖCú¹—‚°5ş°8ÚYâó•‹ÇDW‹ÁŸ|uÃSaPc)ˆÆ‚_;µÕ—ªKpí¤'éº/ÄLı~-F"n1:Ş@ ø<™6<cÇ‡~vê5ôêÚœ©+SNLºYûaä_÷bW—;üiîéüœ‡Œùç–BÕ93Â‘•™ï¦nyZ]öá'tÓw·VGùş{¬}à¶ÊW±ÚúÅ5ÇöºíÛŞOìã3vP3´Õ«	DT>cmŞ¼<(@${9’øÛ4²;=`gôså›FŸ¸T]¬IOõÑP»¿	‹o%£ù«‚0&ÏHÂ=Vx"ñs§Iøz`,O ©/ıfH*‡?ìƒüw¯U®I›˜S<CÛalƒ¯M•.{7Ôë "	Ówó·ş $KÄèà•©>Rıo/Ç0’ºÇ…„àu á»
+“QM,È…™Èªx,” ³*ƒça1Æş§ğ3XÜêUø%¼7`32¬tÂxùÕQ8}‚a}ŸÃ—p‹Èxovq“‰d22­\Àk.y, ?!Uä%RC^%kIyD‘ym%ÛIÙEö‘·ÉÈ»¤‡#³ä/ä<ù'ù7¹L¾$7ˆA2jyâ¤.dtšJ'Ó)4›Î¼n­¤Õt]M×Ò¦éVÚ†Ìnr»ıô ı#=JÑ³ôí§é ’(²»$)EòIOJÙR`fåÈÍ*¥ji9²³:)"5IÍÈÑÚ¤˜ô;éÔ%”Î K;' O”®I7©cÈÖÌÌÆìÌÉY
+s3/›È&±ï±i,“e³–Ë~Èü¬€ÍF™Ò}ì@úF\J¢ŒßçÁ„,ÁŒÜ	!ˆ/&TÂ›¾÷‘0_Üê±oõÈ7Ì8‹T´cBe ¾‘+3/«òrÎÌ`˜›0dH¼·§
+şÀyW°>¸a~!Û¼…*0Qîû1p)móŞPdsÈ"‡E°6±ûÊûÉyf±I&¬3Ìÿ,ÈsÇ‚{xg¼ÿ\¬XÓ$aD„}¡
+Æk„¥Êwy¬BÎhùˆ0•!YeâÉË\¿¦Q.…¬Ê¸Íy«ôÚã_Ş£m³¾¦ÌÏ/Ï"i_Y®‹JTTÊ½Òª&6î|ÚüÊª÷'Iœ™ñ/<¶M£GÍ åáıÚâ[ÓĞt]ø~ó_ÈïJ‹nè
+ö,ü›†Ay²5tùR7îÔOõ]ûÇ/R7}|ùò¯ŒÏM›^1t`õ~l˜"€°ÿ;5ê±z]ü'¥Å©íÌ	È©;tdgLãøÈ~JÜ0«ı:Ó…ßXéòt$¶3öÎkF¦D~¼"½±8+òy?È~aïSÿ#¿|€£¨î8ş{ïmv/¸æ6!ÈF3Ş4Q¤KPIÿH6™$BMT´ÿ– ÒRÆ	Â(Jw$@†0Ô¦%h Gp°lgè^ÎaÂLF¤#­´Â v¬Fm§‰·ı½İKr	vjı3Ç÷nÿ¾?¿ßïóö·÷İ
+õDh/A»aAÁ¾eÜT»?Vƒ¾ç¶6mÎÀíš‡«|‘fŒ	Í¯Ëq¹tÒ-¹•;j:Jòî/Š»ÇËŠOÔA]Óü3so6¬åµ“®¹ı|ÁÜ¢ÚysköKE—ÌĞÆì œ^Òñê÷K*«oê_úÁ¶‚‡._©aæ¿±¼i˜Úãñ|Sò—4{û”œC…Å=e33Ö¾“éuİ5<3GãÛn<:¿²£¤¸íNÒyÛÜÓ¿6€ºÈ¾’9Á“í¼¶;gUÛŒª#Âî·Ûô5ß¬@&	’yïûÕßy¹ºäpG¡İXsà˜¦Îi¾¸¶'C3¯ßõ âXŒ‹n™ôØƒÕEÁpÈÜ£í¸w]7¾?yø½g>7¿¢£¤JØµó¶DuoßëÇêš×•l?ò±şI1Şª¢Èª¹5{¤lÕ–²Ñnèàû«åVÕè(X|bcmaO+İ^%Ò=y× çáĞî~€À‡¹v¤øPa‹4_3'¸cçWïÍÙır—Y§î¼Ùw Ë×WSİkl€í­%ÛÍ“í)ÚSÙTPŠ„vİ|Ï¡ìÜ#MÑî”í÷=Y}p~‚Ü€vkº¶FşõK"^t×Ï•äK{ï‡ÆUDÚrÍp‘¹!×\òp'Í†ú§D¼[n8j¢°Í[ë­oóİ§¦Ÿ å[½[Ûë¯ÿÅéñ¡½~øÄÛï¬|»ôÊÑ;pº¸£ûÎêWm}òÂÔ]·.jé‚Ò2ğÍÔÄúæì˜Vù‘AäÛjŸ)]q~ìnw}“õ!SØ‰ë;A
+Uò	;JòŠ‹"{½üÍLåâG)$Ì>‚
+M*‚&Of‰Ù´†òÔ$vª¯&Ò¬Òbšh&1®”Î4v3”¡]Ztjo¡æŞ‘SvÓó}°àœ¤Q±ñoOØµ=»+²D›‘Ê#>lwğf'£f­ÍO+ÏÆ.XaéOIå@PKB1L†©¨¦¦C)ê©2ÔS³ î‚¹p7ê©À"X÷ÁrXzêX›à§°Úá°À8
+Ï£¦:î*ª3pŞDMõ>$À!Œ\E²Éµ¨ª& ®*"7¡²šNn#åd©&ßBuµ€|Xd	Y†úêA²†¬'M¤™´m¨°v’=¤‹<M’ß Âú=9FbŸA=AN’?’?“×Èä"y‹¼+”Í ~šK¯G}UHo¤½…~š´‚VÒ9´ŞM¿KÑÅô~ºŠ®¡a¡­ôqúKÔYOÓ£ôw4J{èIú'úÓ‹ôïôô2Ë`W³±¨µ®eT[SØtT[w°jVËæ±ï°z¶Œ5°•lj®GØ¶•WÛÌšÙÏP}µ¡şê@ÖÉö°}ì)ÖÅ¡{–=‡õyr…’¼C>–’"(ñ¿=5‚Ï=J¨QñŠRwc$¯FU!Æ ® Ş8oìà™huŒ{×k‘İ–WGEÂ¨Bqsçó¬g¸{Q%ï(ôRZ‹gÉçõG»TØşôJJh#ôX—zåVô}¶àF¥!”4ešÉD»Ÿfº¾yU¬îLT\"nšâ†™ æ“².Ú‘•†+C[øÔdPÁ“IŠ$f”˜„¾xûÑƒ€`Ğ*òØkq÷&èÈ.‡ñî‹hÓgóŠøâ«ª‰3üßñCµü%)A±ñáë†²>Ö¢¡T¸vø»à$¾4,j`$‹#ACÏ…|ïÛ÷…bÁ?ÅØfÁ‚AÃ'XHoEÿ¿,¬ÿyÿäÆˆP‡£XhªFì‹ÆÏ“Åú(6ø‡¬ç_ÑÃN} ş‡b^yË›Œ$üYÇ‡§©c&¾ ÓXPãR7d¡~ŒÉ‡Ê’ş/Eµ ÛŒiFjl|¨ùL*^bk£GŠ Ì8J×‘…»{Å)Ûº‘¼bäpÑåô/…ŒHcáwŞğX(Î¢f~ÅÉ_­pİníF»°DşúG™òµ×æs}Z é:ß¡‹ŞMH
+ÄJÔIú“e¨<bqXçwÎ&Ö;	ø‰ç„n€6Ä¢À;0cÈ½Õ /*ÍÒVÑièk‹X÷rÍc‘F>ÅB9wÏ`€‘Î+0g À—Ûåô¯—L‰<ˆÃ¯Ü
+‹=²„,šYôÁÌ YÙªÚøİ%JáÂGÏ&˜Ò×àt´)ï	¹­É2«—©Ô°-‰ğ|CÒ±v¿:s{ÔyÉ:"Û ±Ğ‡uâd}È=Œñ¯™­xRd‰N‹Ó‡ÛLŸr/†é	4¬²òŠ,2Ø0ºdpÉ²¬úªF}‹Ôû‚OÄaTŸ!Å?ÏKæ0‹K°!HêİÍÅ>yZóÊ|E‚(9Ò£¥¼gÜ0l^*Ó@Üší²°³ˆ=¹T2tK·Œh‹¬fsÎÂ=°`a§šÎ"4ÉóÏïpÇê¼vL#.:-O(ÄÓXÓ²ÆÙŒ¡[dÓÔˆ6ÑÔôà³}¶aåw m4‹°9‹l"rk¹Çbìå÷®`ÑmévÂˆŠA³oi-Qı*áÌx% ŒË×u¡T†Eº¥2•èQî±°T¨GSU‹¢l,¸>È"¡OkÌRÎö…Ÿí–. –Ö#¾ş-µTéÿ°;à´è¶"¦n"Y×ƒ¹Â¶\Ï+L—‚Ä™ôÕ#XÄ.IÖqà*ô=$¸Îd`€9›²ì\³2“çq=…à"Xpd1;ÑÛĞ[cû\ãÅ†A$/˜:—ƒåÂØ‚<n¨×á;Õe¡ƒ¥ä“Ú‚ÅlbªÇ"YÄš<yEß½QrWI_ÈÖ´ziLQWŞ½|!ï}£¬7LÓ·Ôdà²s¶PÕÕ¥íÇMd!QÃ}x¬2ˆ_÷¥–W¼/0” >FW'G°8{ImèeJdS¥QC³ÃÍ áº©’¹d«>ZÙe™YÍåÅÈâßä×_lG ğov·»ëtíÛs‚™#—ÜÆ	Q"˜#%q¥T·vCÂˆ< R×I”€„ÚK_0¢²ç|§ó!¹Í‰¿®¨‘ªöµ !ñ‚Øë¥¾V2iûf©}8cPÊC•*ÈE7|³»÷Çµ“¶	 $æÁ{¾ÛıÍì÷}ãÈòA³Û¡…ë,8•ÒéÊÔhÕëZlZü™dZdÍOâ}Ç‰-èÑZ<²Œ@UZ|-Ì¢&-Øò*ì&ŞôaÍ×½·j5œ¥sÆßåÙÚ÷¯R—}¥öÎ\êI´`cÃÙ¥áÅ‰«çf–t¦gÌ«ÒÂÂ‡ĞñıoåÈMq³eâ¥w›øÒc¸ÓÍÒB	Ö¬‰u=óÖ5Æ˜¶×¢>Y6ŞãRr½ÑT9U°pdÒÂqJvµ”ÕÆG«,²Èˆšæ”®ÅŸÍ%·ùÈ¼ê~ÚÅ›-£;¯®z†R"³ZxÌû”õTQ—³g×Ğ‚M-ªÓ5î£…ufë<x>-te6xx]ûÂyz,»×1tJÇ¬ìRBÍcl[V™Î¬5&Ş€^Á]AN½-ŞoÛà¸òÑ]Ò3ñqn†Äu-¶˜]´ÒïX,h£…9ßÆÓ\¨â‰.¤ãl<Uf¥É$ZàjÛešó¢9/njó"pJI»”…ñ¤MC‹=á—xh±ÀÑbJÑ¾(.C:­ú˜Bo¶×-=aRİîéåü4”Ûh‘ÖòÄ:D‹%iñüZ{<lê0Ó¹~Ïb™X·N”®´8¢g¯Òt<oı1¯èE¹6NiµâúûŠ[GÆp9‰®!|ª¹Á„€DÌJlñ¨ú¬uÍró³ÇÅËöx-ğl8Z8˜ò¤…6`Áer]˜Ne(¶°liq!² ÒÂC‹I×…š¾H,†‹pQÓ÷.MÈî¹`2æYDí®šnÃ]êZtÀµà„--Ô6Z@×‚aß-ø°N-´XJ&ó¼`c£Y§¾rÆ©­İháÊÜ×Ûr]èJÁ,&„,Pí|lñ8èf#ÍC‡b–Ùb¡ ÊèLÛÄúÂ)$µ$È¥…æTvÙ-´°mİ×EódlÁ»úSu;çşñ¶ĞÂÇ9¦[ÙúºŒê´Ñ±q9¡E/(½Z8W£wÄ—QJ<Â»ê2ğ.Y§Æ¥…¿İÂG‹äÅkÀtXqœú{¢#C¶RN´¤)(è	!‚I!³'şÂ•7À€Æ>ÈËwÄíY8ÒBˆ†{ÑBÖ^Qˆ¤†›Y¨ÎOFåºÃH/Z±E/ÜJ. ÚùÂŠê?‚±“Ğç‘…×dáºài±‰Ã
+)Çy„Ò¸5kÉ¹ÅNŸ€´PÂl Â\£Ò¢IËTŸŞf1³hü¡­‹º->°.]æF/ÔWyc»,c'ßj™`-¤Ê´$-pEgá@]¬¼°-0˜‚i?[âd¡garbÕ¹¯úY-
+øpL§ÇÂxÁQ6qPZDõ¥uîÖ†-çá(§úJh!ÀÓû”æ½YëÔi‘ßÙ"Y	cçŒ]qëïİjÏ¿!ºñâĞI|HªM= -úñÂVë>áıù×1§~	£Å”@7²ÀìiN¼0ûN?^x¯21§â”Ù‘Å'E0hgĞ‚¾Ê›±…•]èYx$Ú¥8h1Y‚UYwJVóyÍ°œtl¡IJ ‚­g¡ƒ¬LÕU+[z87óòd³ØŒb§Ì©©„Ákk›­Ü•'»ydêt˜G˜e:«+DQ¼`êF–#îÖZ×0‹Œ¬à«n”G¸‘µ–´Ø…î¤;G
+'­ÒZ§Ì¹³…ıÇÚ¯± Â›)8\ÃRÙ9-|Y1È×Äb¬ -p?‚&ó›|FZD5¸ojh‘6iğ1Æö,~ÇŞtÎj'ÑâGÓì«´X¶f~¶WeŞ…ìòcÙFŞÂ²&ªµ5·H1èÖ…3ÖÁ]ëÕZóà:~ñÚdkğ2V»ÑëÖCÈb€¬Á,úõE’Laénd±[ÆÎRla©M-XKì×ñŠ"Œè3Wş±¤NÔññë‹²îÄ{¹»Ì_ƒ‹zdayşeµ„cE{3?ÓF‹Äõúá{8ûdI<ÓÎ¿ÉÖÆ¦Mzü¹£#ŞüR¤›GËÔŸÍ¥_ÊÍÍ—×ç¢\nVĞš#àõêN,eİ‰µ^ØpS%×On|Öø¹Üc©’
+$\Ö<¬;‡ål.hOZh²W‡÷ëÎ]° /“ªì´HF%i!ZÒbQxù§­v ÂˆÚ75Ë<kÈ`äDcƒx'QkåB-Ş›â•\K3j­¹D1Èµs0§ŞBü]¬’+¢…×åß®UÆæY“5ê†wl•ğ¦_Ûœ5€$öœÈÔƒ\¸7kË¬IxNî>ú58Ö5¯iZØn:ºº;mhÛì¹ÄÀ~Dˆ¶.7R=‹ş~Dƒ‚¼LnC‹]öû¼Äß-p:Tè5|O	lm>F‹çOÆ‹è%U¼m€ÁQö«ÇÔ¿ +‘ç–»ÿÁ{i;ß!>åÀÁü\øŠê;ôĞ;//-†l€%„Ê–¡áFâ¾,ìøØ·PåWnúNî=ZÀv‹Úq†Æ\`˜79'"Šé-C³ùW€m4wmáƒË6`aò»Yø>é[¤ûú˜XJã_ÑÙòå\†Ãö}—[9¡W·mhç|Ô¦ñ‡¾…àw±Hp?1Tíş7:Ø×‡Z¾×QºñÑ>Y(Ò¢ºÍbÇ5õÑ[7ÆAÆEÈ¥…!ï~§xÉoÄè^Ôõ»kã½Oé{¥?Äâ?Ø,î§ñûïÂ‰¶³ZhÒbå¿iñ¿Óœøh;^ßÂÿÿ´è6Û‰Şüßi¡bèÛ‡¥ãpÎÀ×á[p€<9¬eŸÃ/á%øüğ¼ëğWø!d˜|‚d#’iòMr‰|â‘eò"ù-y•¬“wÉ-ÅPÆ”qå3Ê	åËÊ×”ÊS¸{­*?U~¥¼¨ü‹öjŠò¸ÂwÿvE1ô_ÉÒ(TS´-.Fğµ"˜]cëB”ÄÓôD‹Ä×Ò
+kµ<4Š©5Æ0¦O¤kÓÖG´õqTÔª1&>“Æcm|ÄcE‚Û;?ë#œj<Çô¿ÿæŞ;÷›;óÏ?÷ßL·Óıô$ıœ^¥Œ3ëÍY
+Ä²Øhæbnö36—-dõl5[Ï6±í¬}Ì.°«ì?¬xèw@½x<OäOó4>Œá“ø‹|&÷ğ×y3ßÄwñü(?Ç¿àWùm)\ê)i’UzF&‘Š¥)R…´Hj”~'m’>”Hç¥ë2—Ír‚œ&gÉy²ü’\./’_—×Ë­òù„üOù‚|SaJ„ÒOù‘’«LV^Vf)s”ÅÊ*ååe¦µ{•ÃÊå¤rVù\ù—rIéT™ªªFÕ¤öV5üÃKV¨Õ5S¦æ"‚èvİ‘àéüşÀªÄa$œ™IíAT¢RÑR™(VP‹,Ê.ÂUU \éAÂÁDŒ`5’H¬‚=iO¬G’(]j2´"FUvFá5ÂS˜î+”?B÷¥®d€Pˆ@&´3Ñ0¡Äp”áÃ/b *#‚„û ŒF²HûH1ˆL—†êãØawÆEc$Ôƒ‘›Qnæ1U1ë›îEÒÛB×“š!\
+'‘ˆg€>$#†3sQh"t’0F		u¸
+øqÖB”‚:EX N?¨#:±¸¸bİŞÄÙ_‡ôÇÿ<¨Ñ(nƒøÄ\íÿ†B=X¼z®Üÿí(†:·= EO¶5e“»ştİ¾ÌoEÁ^•÷HÜù¡è{Åöšíşa¥ƒVê(‡Ö­]·oà®¢•u`]±øä	,{¶ulcçÍUõ¿ºuÎÖˆ¯{f70*çÑÿWHårú‹7ô¬,ÆäØ˜R¾d(q\RÃ©9ÿÈêh}ÅåiîCIñî}ÿ~>e¤¯Ÿ_š2-»À¾%¹>ÏxbY~uiËÏ½Í¶À+c=1Y6 ¶¾™ù¢•ÅÉ¦'„ó¼¼dÏ/{Õ¨0¾°Ó…O¿WqyÎ)ó”ê™Ù ‰š#¾aaôù4÷±£eËØWå
+H«Úà_YvİöVÍúBÃòQÉÍù›Uõt­}Ì(y»tokîÈÌË‹NQÇ´è¨ÅïÚØ+Ñƒ®Ì€p¦¼r×TãBGUbüÆÍ3'BıüÏ]ki=z(­dòòx÷Ş÷š³7şõ¹ƒù5sİoï¤>7b]¡Úp1¹öùÕuUõ–Ë²–
+Sü¹Ö‹¥¹eïLH<®¦ÚêTÉa‹Ïü~·JB~õÒ-D©[t;{ãû<¯3¯Òãˆ¸ÔÚ’æ>½_Äuîå¿eA~C^IböuYhŞ¢6äÚkÍùÕ‰UŞššmˆÒP’›ò~³¹EG‰¦#â|Yì¹}Æ–3c1>Ş3º|’@©J®´Tq»œˆ±|Õ°ĞhB}Æê‹‡d÷wÖ®èİ¬nİúÇ@ãêöÕ—O7~0ç/o?xh>Ì0­ªM:×ØKÕ²ñËIÓlc•ÅX§ò¬+7+é³;ß ƒ5}±ö2®Ëéö¸ÙÜ®¯‹%²âL®Î˜ş&S›ñ¿øfß6àÉDÕ<jWÆUWˆš‡àºÜİ8 æà>"Îèo²hf¦¸Û’§í=‰GÓÍİQŠñŞ~FİCa¦¥p/Á»‡¢#ÎÅß•û·Ş)s}I?œÖaƒÇ¾ò#ıìu’öÊ‡¢{Ã?Šø-Š†XˆÃPã!	w­À@ü?Cà'Ã!Æ@>æ[áyx§Ê/Bf^³à5X UPK1÷Z	«á-h†?@+f`;`7€Ãpó°3p.À¿á:´CBÅYgD4éMâH<I")äû$&CI&±“\2šŒ#ÈDRD¦’RRF^!³H™Y[5YHjÉ’ï€ÈoÈ
+ÒDV“µ˜n >ÌÿDv½ä 9N>!§Ég˜^"WÉÒN¾¦„Jxæ…S3¦O`¦˜LSi:B3©æÑ±˜3ºhJ§Ñ˜;–Óy˜?ÖĞ¥t]E×èYäê£~ºîÂ\ò0=J?¢§ègô"½L¯Ñ¯èÚNoÑN`„1Ì1CY8æ™‘,Šõb}X,‹cÏ’Ø“¬?{
+i eİ3„;úHùE¦`T’È’(§%¢Å¨Ä˜^J´± 2×ûÉ]ÄDMÁ>².S)&ºWÑKXğ …ŒıUİNxƒ~y°ÅîJî'ô!{Q]òH1>4~á“b$TøeJé™¬3b#.»S±‡paW4
+Ñ{uõ•¿A]+h«R‰KA©ğ/éÌ‘ºfIÖëAb:s®¯	•dIôÂB¬(…qÜ¿R `Sd‰‹Øª}4)×í³sj»]–Tk·¦fT48|áš?p8y¬äòI}},Iõñ¤„³RMµt85?QrìA·9ÅvwbU´PŒò{ªëH?Èç{„,uùI Úö'¶àg†M.BµjÕ´œév)ÆFˆ)¬…Zµá5<ß™àÒ¼š7×íÕ†kÓ¦¸q`ú%^×Ó8ÄñÎéX8->›+önµÄå‚~z?\÷ãu¡‡² ‡2İ:èD£0ëHÍÇú9œãœ>=Ög³»b--Ç·Íáôm³ÇZ\.´
+¿;R|Î›s9<+†./8¶X¸¼Ş®V‚Åçñzc½G°í‡mİºlAt,)ÇO<]åI°Ä
+A‚%Á‚ãt‰I6Š¹ÏÁ‘Z\©âè‘š:›ğÔ˜p»¥ãµ²+S¼ïÚÍ÷C©^»…Ç,>h|Ê!pKnJ9Š±]„\Ìİ0õNäZš¸†¯ØPä5È?ÖÓ‘ŸB.@Î@ÎGE3`rö>œâÉ–À<ôY ±¾dÇáM²Öˆ'K‡
+ö.¼‹v“şËvõ…:•ñôŞ¶3¨ø0ìƒ²Ã Ã¸i’6½·Ã’´ùÓ´M›“äœä bš4M›¤MoÒÛ?x–AÁ‡ÁqT˜'YEÆAXÑ\|D|^}—aD¸Ş¹Ëbá×ïäœïÿ÷œ“Òc*ÙÛ½”³‹©‡/¨»d^-? v}ê+Ì¹R¾Edî¯EÿüC¢ï_dşFñU!gåß÷rD¦\ (jy©+¹ O×¯<£²=öã«úÑsDôıhÒÙ(Qß+=9Y‚S|JqÅ©·ö(=¡*¥ç$?§šdü6á»~å:¡O¨Û¥·¨%¡è¨3‚ßR×ˆÌÍÒ·©7ËoRYûbùëÔùò‘ˆß=T©â£Bp›Ø¸V¬œÿ„zHÖ>¿‘<S‡Q7ÉX 8#<Êá=Ê<¼wş—âÃóWd½Fæß(¿"~HûşCİ#z¿_.SÁM‚Ş!ñ½_¤Š‰üÄ¿[{ìs±ûÓ v‘Ü´÷ØI~ÎJmJ½\û)Á»Dş~ù…©ÇpŸ¯òƒÂíÃkÔï.ñÎ„_!6TÒä"Mq{Ø¯•Ÿ¿$:î_ÂÃŞû—¸µÇ•g…·_~Cò‚_Ó‹qğ1-¾$µ~zğµ«ÔùİK9b³ğ_‚H­G{\¹QàU. R ùùÉı¾wnXÎJ/Î‘Óâ£‹ŞÿÊ;j{¹c>sñ_¿X /,òÅº¿½^;$s_¢şH‘ğö'Çåíéÿı.Ô>æ8?ÿı'iár_İs»i¿—¿5šÆ>¡ï¾öì5ß.™/­Äcs°Ë6+Ú@Ä…3¼7Ç(8sÀ4Ùd,*­°vGµxêÖÖ‹În2íEjKP‘›IÕúy Œk£Zj„ÌØğSÉ0ífh"¸A’ï˜]KÚEH@4¢µcu=©‹~8=I;§ƒaÛÑ¦Â	 5ÑÂ‰o1«„åV¦âÑ÷Í°$­ Z	úTıEv¢zt—æ«­GgOå<ïO"õ¸uZâ*0•<td06ÄcCæ49DğÊ[=°ä@gÕ$`â¦Cw6ò¤“vı¹ Lb•afqx_Dm³mŠ38³eğ­~ƒ]êj)p™ñ-£>¥s‘%¡«ûË¨Ã‡¼ii³%ˆÃ1ËÙHÔ†Ä¶çĞc¥¶FÚ`z„Oî¬Ú</’˜&BÛĞÅ™ØÎÚ‡.;ÍX¢ôÄU|Û–`7f6ÌÂÓŒUKäG½ãS]Tğh®ÖQš:¯ÑU&w8lš¨+,By›C«)ŒÌÌ¥c{™FĞJeW	Áh£DÌ+x1¿?ß¬'ÍŞN±Å7ÓGZİZ$†Co Â$³ °”æ¤ òroÄ³Í8
+½˜Ë»­¶¾•7™í2!‹eRW†<ui¸¬Ä»s‚¸Šç*×ÂÉn˜‘P(w[NâD…‚U<å]Y@‹µÁo$Ûéµ[õS15GÊë^ì±ˆ±9K»›7,Ñ?v<Ÿ9éZ’„&éÀ:”×ÙF€œ	a˜8[g1˜y¦-k¸Hmù¨¹ñDäÄ‘ÖÁ²´õc®KşÖ„[ˆÔæÔA}võÙY‡+ÆdĞ£a$!ÑŸB/0İäK`t
+»Dºw­vİ¶µüÅ‰¸™Hı]=ez’#Ğ7llòf’ 1Ë2ãBíØVAÔ…,ì…];«Î¬“İÜ×#fì"q­Ót†G¯,6Ÿz¨ã¥_×#àÍëšâë°šäBßh©…g“•¸íçZè†!Ÿµ`eÔä"âµÈØd–N­»òd<Ù‚† Ú8Hn@&¬Úb¨Ú¾n¯×+é–§íİÀ…ÀcµEÍD* ç³¨#„1dD XÒŒ†e…söFH6"¾m+:­9lîŒc¯¡µë4¿•¢IdÿÖHÍ{~"Aˆ¶89UÃ¦…RÙ Í’Ô˜j rYÀ×†Sº†,yÜ Qµ5]çã®4Í§}ÃÂ«Ù¤şÀ«)ÂyÇ­•¯Äã@n²>n¡Ü¤æ*ÂÄqçéÊBáJ2Oš‚Ùôšd›"»`šª¡/åí‰qoÂ(` úbÂÕK¢%1]À$syÙ™ÓhVˆ….¬õ9•Ÿ›, #R×–aåq5PAKO>fµ-<·“uê­'Ä®ÁÚ¨!=¥0·kÄOÒQª®p°â†QÏç~„QÂ9ÎÛ>Âé(’¡eÈõ=F6ÍÈ±Õ—¤É±Û13u;ëW‡6Î^T]Ï	GG|z*wô¾):£lOeÍ³8Ş˜˜üÔZ“.áúH‘V@¬ØX$}4]Ôê!	KM“JŞM³ ·,«¼aÄ02…-s³ÅLt]nMì jkTµ)’peÉ¤Õ±…9ÌªÇÙQ86v{z¤UEİîËÓĞ 2‡½™W	×wî<şòƒWïÿğ×ß¼ú·?İy~ÿÏ'ÿşó£Ã_¾÷+ã³öçîÎşùìÇàgèì—yTÔ×Çïo~³ £0` EA%!UB5B‚‚7ÔŠ¤h@§JÑA¢H—ºFeÑDHB‹ .Q1¨I§Q\â£ipè}_æxÏÉ?==é?w~Ÿß}÷¾íwß»ï½94ä§%ùú>¯\Œ±¼m“Ò[ñ]agÍö„¶ºéQ^ïnŸ­ì8šr1Å)âœN*»ïu¬³©#½2ÜÊ²Ãö÷›#ç¬øc`ÏTÉ¾»b4Íqi[æ–¯­ŞàØ¸ãD÷âYiq³j3>Oş$Ñ­aëÖ+«¼‚ı“/\Õµ˜å„îo¹ã×ôö‹ŞµıÊ²2ªï•5­(îvï>}ØúÁÁU——UßÎîH°õ8¶aoçšy>ÙÃfzGÔ:÷U¾ô±Í§)»²Î„l¨kŸì´¶õ£Eó”¿S¸Ğó¶Kş´¨ø[Ë¾v¾2¹¬ó›m-uçæe¦×ªô-¥á{NIœÛ¼ıF…uWväKŞzŸ+w;_:¼+İ=ïñÆ¼Ìù	§––Ëô;¯K‹>9ãÈ–qëôÇ+ªê6U2/yŞ*êÔßÕ{*o>ÊŞ|û|Áú•Í)†‰Q®¦à=Y]¹ŠoKô/†”Tß—÷jó>…ãåÚ–)1E£G>ô¯²k¼:¶júµ	1š%ê³y7Û«ÄŠï¼ØQÜÿˆ±üÒ›Ó”şKwúäNé_7Õë½G5?vsu~‘c4!µéÇ+Â’Š®ŞÛfŠŒKøæ‹Ä9rPphñú„ÄòöyC“KŠÎ}v·hnã…¼Ù«Ûãµ5•kOèV-›T¢Ys‚ÿÆùJ5¤‘ìÈÚW2IöG¯P0§|±ó5Itƒš©ˆfP¤EÓf=Sæ9
+¥äI.¤³hÉÿg2IZ®(Ê|ÚP:H›h7ícÑô¥”Jñ4æ©Æ–Ş~FcG3Ÿé^G“~¦¡É‰¯o¶¾Õ’Mï?:C"KR‘™dI	Ê<YR@–@¤Ğ>»ÁŸÀ‚ÁGààC°| ŞïßƒwÁN°lïàÊyò-ºI ¿ENÈ2}ùx¼^ÛÀ+à·à?ÀVğğøwğkğ+ğ"½Cƒ¸·‹4”s_B÷%ËJ:¹ÙB¡9ùØ¢æÁğ$ø9Æş7È'ÀãàQĞëÀÃ`-XC‡(†ÇUÓ›ëiæş…F¦jª"[¶T“rYl©¢J¾º«`‘™a¬«Ä¥¾‚F1?£$zx©ğšTñ{k¢Ü§è¡c-£Ü£ŠßBw€öÓÎ	È‰ö[Z™)Zø˜¢X.EpøÚüF3÷BŞ}1z/‚¦ĞÒ^!EN´'42íF½]d`~Às"Óû¨½½í€ü¸]¬cÚF/1·B³ÜŒ6ÁúWp#úÜ ëz^É2­C™|X×‚k0§ï¢L¸šÿ®0{¾ç±åB³
+\iY;+90eÈ2å°§Å÷ä Dæm¾'›ı×Ê–lX²©-Y´œ{UÁ"3…‡—s°‡²NXd¦ğˆĞˆh5ÿ.£¥(µ¬7‡~–¢T4ÓÁ%øêÅ†Ş¸6òfÉ5½9Ô™Rf!,i¼åˆÙOÃì§al©ôc]*f?c™RP'œÎç€3Áàtp8•Ş@¬OEîŒs
+äp2¾Æ±˜©I'‚1àkà«`4ï¹Ì#‡öÍËˆèÈá Ã×Œ…<ü-
+†€£Á`®-óšr úƒ£ÀX'“ä‘àPş†Æ3}!û€ÃÁçÉ›ûPñ[ä¼±B‡Aö=É9”\™¼âer‡~ûH¦Á(ïÍ ÈAWCï:p ïş(å:êØ;Ï‘=÷¨â·Ğõ#ö¦Šß¢G‹ÍÑ(d™ë˜AQ×ÑeM_°¨m@kĞ
+ÔP SÍ»«L8£gÉ ±¥@ËÆŸÈ_ŸÈÚ,n}?ü”ñSÏ†$)ze¾dôıU~ôëtóßüÇ-±+‰ªæåXÏNy‚£mØÑJ,q¨¨Ø¡Ö[‘•½–'Íz°–í6¬×rÒ°ÃûpYg=ı9ixq`‹¹8hyš\YHİ´<]ƒXv#7ng0æv†pÒòòuç’œ´¼¬‡rION*^ú^¬y“Šg8Ë#9‡˜ËœˆC2åPl†ã9Xµ´€ïAÄÛÒ[,ÿ‰7)¢Åœ´¼Ší¬€·F-4…¬7ñ!¤åo_”ña}Œ5'ùè¦şÁ?Iæ­Ê$Õ,Rç0k%©%+•BI#›Z›^ İù¦óM~ıìİí½Üíİ“”Ôm”]»¯›·jlß_¤Nğ³Qr×åjö^P˜›Z©Q‰{—ê¬æŒâ,¶Ñ¨¤TKár„Õx]W×µQÎÁÜrw{w»½Cp°xü$¯ •£ÊÛË=P½Ñ<]¯Hx²O/ÿØ¦ø°4Ù¼Óœ\j=yüÏSüÿÓ¿%BÜ$=¬¾–¨#˜¾œze5K.""•Ö¬qáuß++8¦YlÜ1YÉò›YÍrÎËÑ'DDûÆf,˜:ÿ—3|êEóy9O®h>wbù®°€fsˆÌç³t.ŸÛ‹YšÅ·_.÷ŸXğ•|eSãkÅ6ÆGinZ=`›;?{Œö3íBJöV(Xxzu–x_H4=1—>yßª^½ŞêõıK€ Ã¬
+endstream
+endobj
+38 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 813
+/CapHeight 0
+/Descent -176
+/Flags 4
+/FontBBox [0 -143 976 814]
+/FontName /DLPJDD+ZapfDingbats
+/ItalicAngle 0
+/StemV 0
+/FontFile2 39 0 R
+>>
+endobj
+39 0 obj
+<<
+/Filter /FlateDecode
+/Length 4941
+/Length1 7996
+>>
+stream
+H‰ämlgù¹³ï.MšÖ«Ò.Å@Ï\“µrB>'q“6Îùîâ¯8±ã³5!Ÿ?'±§1Iš*[;oÕ¶?ûª©BâC¥ ó˜P[@+ü@0‰Á$ bCüé¤?ĞhxŞ³š“BBâÍ=yŸï÷ùz} ´Ã6˜`vf®opÖ¸ƒœ_#Ä³ëş±Á£ jé?Ï¯œÍ}çñÛ· èä]//”Ö¿'ı Àô VX(Ÿ¿úòAÀ‘Ÿ"ï©B^Ëİ}ş‰/3£ıp¢ÜE€}÷>^(U6_;0ò€ÖÔ?S\Éj@_}à#*ÒRIÛ,·oûÀÇßA}¾”¯h¯Şùh¹rV+åË;jøØŒG.ŸË—şÚÏ¾p˜ø¿“¤ÀÃë	z~ÿA†¦hŠ3Óì¾‡ÅSÒî{ü½ûlu—ú"{êú»Ôü’ùëÌe8Lvø#ü`ç÷†ÀÀQ~İ|~¿0¿·Í¿„oÿÃéÿùã{à¿´˜[Ì-ğ#B™0¿i~ÒÛÙÆº‘/´§´ò</-]Èh•5Øù[X¬½Ÿ”¡Y_ÔóoÂ‚µ%emgÿŠ7Ì"~XWHíq™ê½À=¡Æ¢s‘ğìLh:ğû¼SŠ,yÄI÷Ä™Óãc§\£#ÃÎ¾Oööœèî:.|âXgÇ#–ƒím­ûZ8–1›h
+zdAIózwZ7w^o/¡ÚŒ´Î#KÙ«£óiCß«éFÍù‡4İuM÷®&eáÇa¼·‡—^]øT*¬"~Y’¼ş®O¸¹Û Ú‘°ÙĞ‚—;¯Si^Ö•õBUNKè¯ÖÖê<ùÖŞ¨µ¶!Ú†˜~B(×¨g(¡OÈ§j4´´“cuS—¬åôÙ°*KV›-iğÀcøÒYÎ¾øE3<Ã×z^­>{Ã™´}NÈi«ºIC£ªI®V/êØõ“‚¤ŸÜz§SÎë=‚$ëv"»P:Óeøêû€ÁïŞİËÑ¶Ëò>”¤¸[&”7qÀØ0BÌÏf#±<sÃ$ôí°Z§yÈX_wŸ=©Ói"yµ)9#’í¦d×<-ØH«ätãY/têÛ¾·«o<]ø œ×MİéL¶@v-_$©^·¨ª»%DÜZ#W¹Öß‡úZ“X$e«zŸPÖ;±®€ô`qN5Lfz‡G‡t¶a¥÷É‰‹—«i© ñ%„Õ›àØy»6Ä[¿å€!H’8ô#lJ·\Usóú±´5‡ó9Ï«V›îNbù’‚šO’.	ıäÛxœÍ8Ñ°ÂÜÒn*“Ì¹®^¥­¦$é2xÿ	â8
+,Ø.ƒ$Çy•²BSOihl$L]/™ˆ©Çkµ%mõõ!!Y11]zË¾,ÈØ©~Î¿­®M:ÉËyé ÷8e6¼ıó8iR‹ÆÁhÑBÚémŠL]xs‘G£ƒEºØÉë0Ë«B^H
+8CîY•äFjmô70'Â)ÕèvcJ¢{¨º|tWÖÀtÚƒ¨Ø­Íô”Aï’Ş‡Ä¾¦˜¯¶¹*ñ,4_õé€#ëÆË9zh¨qüyMà-¼RÕnìlgª5·»Z–Ó…SÄàËU…9uÜj„Q?kİ"Ç‚ ˆŠ½=øã#ÖêR¸æ¦.Í¥Ô›üÀ¹Uk4%&Éôw0Aü±“ù)Îg’…j:IF`!ñ¡tJ8:-œ©Q4»_oò¢Ş&ˆ„?Aøu>Kø¶…:Bõo)öÂıñûÉFŞÜõwúëüXËïW¸Ã§ƒdìoÁiæû ±³àe#Qa…û&„¸4çÀÉ¾ÎóÜòÉşxÑVa[!Äşm¢ı£0a~¿-–ÀÅZQÖ"{¡ÆLïÁ˜y	œæ ¸Ì/áyO£ülÈ rnUa–M!\D›Ñ~y· nà× Šü	ö+0Ëe@dŞ‰ù(Ì}1lãaÃİ‰z]0†tÏ–˜¯—¹†zŸÆœ® ü
+|Š}"èÛO åó9„Pçú÷c,A´yÅ¨Cõ6öÅ6àP=7NÀxŒ<PLŸ‡ŞD/=^ÖÒ$€Ÿ £¢OÓ1˜ @?¢Î:˜a]L^	P¿‰ }u˜_AÚœ‚„>Î&ñúv ‹9Í·1‡Ë0ÆĞXûĞn]ÿ'{ëŒõÅi˜®AŠù g0‡ı!»
+Üê”p6ØëXRû«8o9œ=qÄW!Â­¡ı+H[à4«ãŒ¸‡úØO‘ {ipšÃ³vœ»èwÎ
+Nî»h;Î•Ï	áÙ"wı« ;CîJc5ïÔ	r´r¹XÇÙJf±ˆw'?¦›zÍ/ºúw$½lúÎO¯nÄåTFÕü.Í¹:¬M2á•Â`&èLÍ%ò…³¾’¼ ¥¦“jn-™ğ•ÙLÖ\teŠ3N9ë“kıçRË¥rNİÌ.ÄJ¾¬Ï‹9™œ³2+äsC¡‘de`ÑáœÎ$†gÔXqØNy\©¡ßBÑ·>27rV±xH•‹™şĞÊrBì¯”Šñ¸¯0wTV––+Ë‰ÁD0â-;5¬à]“·¦V+£KŞ…iï†4)OmN—6–9y+ãyF“ş­å)ÏÂš&W6×ÕÔ`T©¬¨|"ö«¥Âjn9J×ÂJdEUœJ~`8±³Ï—²•À‚¸œ;’$¹”šíâäh~`Fø¦KSÙ²J[açÚĞº2)ÛcC%W2”ôy&WBşÑ¡Íx¬lzbKÓÃâ¦¿Üïñ­×\“«J¤/X[LEÊáT$•qˆbjY	ó‹ó1us9ÍºçGÙ¸˜s…óı•b*6ˆ…ÃÓÎJ@rØÏÿÆv¹Iq”|g÷»$w—$UpáêrUÜÌìîİn²·³3³»³Ï™Ùy¦ØÙÙ÷ÌììãöEx1Pˆ–&V^–’ÊÃ(„xA
+‚„`I‘(y" Á bå„€¨<\Ze•_}İß×¿î?¾îúºëkE—˜—mE’‰£Qİ¦‹³Ì3µ²½±­#ò+T©éó8(ˆ®'ØçiÖp4äÀ“¼Ta­„¦h0›72LUQÈ,áÓDnÔNh…J=F&	µÆRõ&´6E'Á@´?@
+œŒfbA®@³†?["‡!ŠP1YSPÖÖ}u?ÆJ”qÃrŠ¨CŒmB–š©D¤A9¢yƒc ûhVàIEsÒªv0B1˜3²Â!~M§ít>ãNèDœê#rÁ(Jø¯±hŒ"ÄáP…âŠ0:³ç+n*¢ÓE'*!u”Åá"¥‘£I+š`ÅŠÂa04Ù7TNê™ªìåŒ`,FC9x”ó:uçÒªJf8}B—N¦¨‰p˜Pvó|ËziRò*Q•sê­XÜ<G*¯¶òCB)Á0¤âDÌQv¬	Ñá–p§l¹(Mf(ã1¬Şˆ
+Õs	«jmİ»nLÔãD< \Z6œå¼˜W›‰aC…¦Ç]TüC„1¬T	¥$#ö KNo¥ˆ×Ë”$™"ĞÑ<ÙH4$†¨L]‚èLT$I©‚:âO‡x,]ÈÇ‰l1®7œf„r,,Ä+B\š¨d‰0¥Ùì<kËDRñ°Oæã"qÜ5\ÄÃµQ¨é(§|
+Ë£2_°4LF(•¬e§C)(Œlwâ‡ÖD¸ˆñ*Å»›J8}T´#Î„æ†¶	wÃ¢5ƒfDºJÃ
+œàá$çãÜI»$µl’Óˆá¢ß>š”°b•ªiO¹Ec)‰%a«§L`¹Q>ë«”’0YlF–ÉówêªŠòY©îË!vN±×³"4"I°Ä$yo$…á%oK~D¢TXÄŸc|ÉÎÀ­ÜÌ'}FIöyÒ• ‡QÒHm¢{±gxÖ¦‘‘ '¡5%¯XÓ%@±†Äsé ‘°iNÒ8„j„ªTÃŠ’hÒ†øU(Æ`gA¼ešHp¶JQb¤µõT‘]ĞlÊMRš'ãbš%ø\æX‘0)$3Òò™¤W¡Ry'‹×=ZtˆÄÈ#'05#r¤ÀGÈ"[¢Yƒè<íFx3yê	ÈÖÒJ(²[c¾T0¦Ç›Á©C•`=õ4õ«Ã‘a†@T`Å«VhI	¤¸º.C‘$Åóåœæi¤¸ğ¨®6Â4Kød².+ª’fì<‡gb¬?øÑ–r×BõUå}%sÏk´?¡iAJFd†9ÆTØ—ç¹F9€‹—Â©‚ÕÃ2É%O§—/ÿòÂY`Âyë=÷Oš‡®•¦¶L…Û@~ó»ëv<ğËß~ğ—™“OØzì‡g„ÍÈ³×iÏ¯_4!¯ŸÚ3]yøàä~9ú%ãü»óŠÏ†ÉB<ybVæô˜uáîkŸÿd°¸]üùÑæÅÜïÿ¸bİŸ~°÷Ânïú‡ŞÚvöå™]#¿ÁÍ³i®d±ÿÂåUeúìáË{n½±gà˜ozÑqã£§ÏA[Ô§ësï{i‹<ªwÆ#ıCöİ÷£;ÖDç×N}cÙÎùW×ö-_wî­K‡_‘‡q[É¿º~jç
+rIıóñı×±©÷¬‰?öw¬ï§/O®t1k^ás?KÙûo·-=¼;>ï%ü{Ï<XœÚÔ>‘×>UoÛ³vòÈÕC–_Üñú“ıËŞ>}àıÍg¦ªÁ[Ü¦›™+ŸşøkGf®83ï½6£t ·œ¸’œûëÁÇI_¿}Õö¹±¶¥ÇŞèÜpÏ‚ı›«è;Ÿ<Y½ûÈ.>«u.˜¾sÿë‹w™gï|4ïygÉäÉ†ëæÏÊ—¶½øâØõ£Sbß–+3äèŞã¿¢O\_,_O–½ú›ÏeS¦h¸iÑéU!Ó«ßê.zÏ¡SÏo½ôØ=w_Ø·xòfôíÕ¿;şÂ+³\Ñg>W,Ï66œŞ˜¼ï5½ùîj*İèH?Ñœ^kûì;ËŸŞ7Òwÿñâû+¡ë{Æ¾ZÕÁJIKAĞĞPGç‚Ùø ˜N*`²ÅqŒ·˜H‚<«€l‹1”R-ÄAÒ§€¾#0ÄZÌãîÑV»{6Î¹ûîDÀŞ¼}¶·!`ÇLØuo'k¹×ÌÆ˜Gæ íÀ.`K`WÇ-:°½3ú° 6‹“›6™ĞşÀö»˜Öo«Ç*™†ş+@k |Aş¯ùWe6)7OXnÿ¾Ébê0ÕÇ˜î.°ËÕeéî ;Ì®€«ènÛÌ.à2İ ˜»M Éìê Z³=íÓíæ¶é6seÚbn­p@iÚdn·tµ™:;€ÎVoêùğİ–_2ÿ[€ÿ8ã}½{—,ì]¨X7î737^½ybÆ¡¿–Ú?ùŸÿÖ¼±ŞëfÀôœXn7›Ğ˜ahåøÊñ–Bÿ¬Ã·.¶¿ÙÚÍ³c¬ß5ğÜÀ­µèY
+ıƒ½jéi"ŠÂç»·¤b¡¾èk Ğ¢™ËËtá(´Q)#DyDE#hˆã3FcbB•…Àè
+câRW¾®Lté/0FÖÓé .]¸2Ü{Ïœï¼nî9÷dnJx“ğÔ#›€ô'P»XXì.¸µâ€†qxãPc˜bGm´û‘õAîS!|*²^ÈƒÌUàPî¹°¢@)ŠÎñáœñÎ~·‘vB8fB†cÎk:Ğá€¼2ä¢×è9)âR°â¡@šËàÁöP ,¶¼„å$’KõxPúş
+ã{æëĞUQH`€³èJ`¹µ?j ÓœˆÖ2Òdœùlm1„c(D1…èŒBjQDCF.Âb2Ö}!‚å0waV0®f‡ê9—ºá2‚LGK¡pÄ¿äš>Şû¾¾ÎµÈ\Æ’ŠAí*4i/„Y‰!77`¨2ËY~æ,ğ•o¨Á“JJ_Y9u½îBÕËª—vCX·˜+}rº5‹€GÑ¢›%}Õ¯¨±,f)È´¢Š«fËVÔõ"™9{¯Üj„ù«ÿìK]I$•2¥.‘jHñjHmÛÚÚÒòliŞŞº½ÕZÎù•üÎnÏLË®hpcDíZ?ìqU&‚¾›WÍk·vl™?ï¼”ÿ¼2›Ò/Ç“5cÇ”òÓÑ6³zSµ~ôãûÛ¯4nl\÷»¿ıAoşÉëk´Fÿ?ñS3j¿’T";«6V¥ØJrÖ¤¨ÍÆ‚ÜdÚX²ş”ŒïÚXaü,ÓÛ·'“Ñ†ÏŒf&&ÇF†§§şNEê¥>ÚÃ<C:Ğ0áãfh‚&iŒFX¦)ÚOÇY:G'Y>û—1ÿÒË®Ú;4‘‹¸2U´™sé>¹n[”|š¾ì=aV¦¿b}éö¸ı¢Å?Œ?İM”ÿXöV¹bU¼A? C-£‰
+endstream
+endobj
+40 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+41 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 653
+/Descent -250
+/Flags 98
+/FontBBox [-169 -217 1010 883]
+/FontName /Times-Italic
+/ItalicAngle -15
+/StemV 76
+/XHeight 441
+/StemH 76
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 250 333 0 0 
+500 500 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 722 667 722 722 667 611 778 778 389 0 778 667 944 0 778 
+611 0 0 556 667 0 722 1000 722 0 0 0 0 0 0 0 
+0 500 556 444 556 444 333 500 556 278 0 556 278 833 556 500 
+556 0 444 389 333 556 500 722 500 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 32 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 151
+/Widths [250 0 0 0 0 0 0 0 333 333 0 0 250 333 250 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 611 611 667 722 611 611 722 722 333 444 667 556 833 667 722 
+0 722 611 500 556 722 0 0 611 0 0 0 0 0 0 0 
+0 500 500 444 500 444 278 500 500 278 278 444 278 722 500 500 
+500 500 389 389 278 500 444 667 444 444 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 889 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Italic
+/FontDescriptor 33 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 151
+/Widths [250 333 0 0 500 0 0 0 333 333 0 564 250 333 250 278 
+500 500 500 500 500 500 500 500 500 500 278 278 0 0 0 444 
+0 722 667 667 722 611 556 722 722 333 389 722 611 889 722 722 
+556 722 667 556 611 722 722 944 722 722 611 0 0 0 0 0 
+0 444 500 444 500 444 333 500 500 278 278 500 278 778 500 500 
+500 500 333 389 278 500 500 722 500 500 444 0 0 0 0 0 
+0 0 0 0 0 0 500 500 0 0 0 0 0 0 0 0 
+0 0 333 444 444 350 0 1000 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 34 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 222
+/LastChar 223
+/Widths [556 556 ]
+/Encoding /MacRomanEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 35 0 R
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /DLPJCL+Symbol
+/Encoding /Identity-H
+/DescendantFonts [ 42 0 R ]
+/ToUnicode 43 0 R
+>>
+endobj
+42 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /DLPJCL+Symbol
+/FontDescriptor 36 0 R
+/CIDSystemInfo<<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/DW 1000
+/W [
+65 [986]
+]
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /DLPJDD+ZapfDingbats
+/Encoding /Identity-H
+/DescendantFonts [ 44 0 R ]
+/ToUnicode 45 0 R
+>>
+endobj
+44 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /DLPJDD+ZapfDingbats
+/FontDescriptor 38 0 R
+/CIDSystemInfo<<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/DW 1000
+/W [
+3 [277]
+22 [754]
+]
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [600 0 600 0 0 0 0 0 0 0 600 0 600 0 600 600 
+600 600 600 600 600 0 600 0 0 0 0 0 600 600 600 0 
+0 0 600 600 600 600 0 0 600 0 0 0 600 600 600 0 
+600 600 0 600 600 0 600 600 0 0 0 600 600 600 0 600 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 40 0 R
+>>
+endobj
+25 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 222
+/LastChar 222
+/Widths [500 ]
+/Encoding /MacRomanEncoding
+/BaseFont /Times-Italic
+/FontDescriptor 41 0 R
+>>
+endobj
+43 0 obj
+<<
+/Filter /FlateDecode
+/Length 217
+>>
+stream
+H‰TP±NÄ0İó91¤n ©êr,8-ì¹Ä-‘¨¹éĞ¿'‰ÚC¶åg?½gËK÷Ò‘‹ ßÙ›#Œ,ãâW67œA­À:÷®d3ë 2‘ûm‰8w4zh!?Òp‰¼ÁÃ0<=V'ol‘M	9«Ï¯„ôk?8#E¨ mÁâ(äåU‡«d!şÃTéë]Û[\‚6Èš&„¦ªÎu{$û~°n£ùÖ,mU?«V¤íÏ¼|Óİ‡Y™“Årx1’-8Âûo‚Y-‡ø` áYj€
+endstream
+endobj
+45 0 obj
+<<
+/Filter /FlateDecode
+/Length 228
+>>
+stream
+H‰T=oÄ †w~…Ç:@¸ªU¥ˆåºdè‡š´;NŠtä!ÿ¾@£;u ä×~ìóS÷Òy—€P0=&·„KXÉ œqr	Ö™´Gõ6³À3ÜoKÂ¹óc€¶eü3'—DÜÃó½8 '‹äü”•ùõ•~ñ‚3ú”‹#ã§WßôŒÀ+x‡-"È7ûì`q‰Ú i?!´Bˆ£*Oó¨ ½ıŸgò:æG»UK¡Øµò©9*–Ù½ªt)?¼º2+Q6\×PmCÎãuS1Ä2»ö+À m'
+endstream
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+10 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 12 0 R
+/Contents 11 0 R
+>>
+endobj
+13 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 15 0 R
+/Contents 14 0 R
+>>
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 20 0 R
+/Contents 19 0 R
+>>
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 23 0 R
+/Contents 22 0 R
+>>
+endobj
+26 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 28 0 R
+/Contents 27 0 R
+>>
+endobj
+29 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 31 0 R
+/Contents 30 0 R
+>>
+endobj
+46 0 obj
+<<
+/S /D
+>>
+endobj
+47 0 obj
+<<
+/Nums [0 46 0 R ]
+>>
+endobj
+9 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 10 0 R 13 0 R 18 0 R 21 0 R 26 0 R 29 0 R]
+/Count 7
+/MediaBox [0 0 612 792]
+>>
+endobj
+48 0 obj
+<<
+/CreationDate (D:20201119110005-05'00')
+/ModDate (D:20201119110005-05'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+49 0 obj
+<<
+/Type /Catalog
+/Pages 9 0 R
+/PageLabels 47 0 R
+>>
+endobj
+xref
+0 50
+0000000000 65535 f 
+0000078410 00000 n 
+0000000016 00000 n 
+0000005560 00000 n 
+0000074764 00000 n 
+0000075207 00000 n 
+0000075725 00000 n 
+0000076301 00000 n 
+0000047914 00000 n 
+0000079056 00000 n 
+0000078490 00000 n 
+0000005688 00000 n 
+0000014714 00000 n 
+0000078573 00000 n 
+0000014843 00000 n 
+0000021986 00000 n 
+0000076475 00000 n 
+0000076821 00000 n 
+0000078656 00000 n 
+0000022139 00000 n 
+0000029596 00000 n 
+0000078739 00000 n 
+0000029725 00000 n 
+0000033767 00000 n 
+0000077187 00000 n 
+0000077647 00000 n 
+0000078822 00000 n 
+0000033911 00000 n 
+0000041023 00000 n 
+0000078905 00000 n 
+0000041152 00000 n 
+0000047785 00000 n 
+0000048054 00000 n 
+0000048256 00000 n 
+0000048456 00000 n 
+0000048653 00000 n 
+0000048850 00000 n 
+0000049040 00000 n 
+0000069152 00000 n 
+0000069344 00000 n 
+0000074373 00000 n 
+0000074564 00000 n 
+0000076618 00000 n 
+0000077819 00000 n 
+0000076970 00000 n 
+0000078109 00000 n 
+0000078988 00000 n 
+0000079016 00000 n 
+0000079179 00000 n 
+0000079302 00000 n 
+trailer
+<<
+/Size 50
+/Root 49 0 R
+/Info 48 0 R
+/ID [<02520166e9790ee3952417697513653c><02520166e9790ee3952417697513653c>]
+>>
+startxref
+79371
+%%EOF
